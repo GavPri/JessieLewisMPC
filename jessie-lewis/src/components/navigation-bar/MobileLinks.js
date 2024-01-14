@@ -1,9 +1,7 @@
-import React from 'react'
-
+import React from "react";
+import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 const MobileLinks = () => {
-  return (
-    <div>MobileLinks</div>
-  )
-}
+  return <div></div>;
+};
 
-export default MobileLinks
+export default MobileLinks;
