@@ -7,9 +7,15 @@ const DesktopLinks = () => {
       <li className="mr-4">
         <NavLink to="/about">About</NavLink>
       </li>
-      <li className="mr-4">Services</li>
-      <li className="mr-4">Contact</li>
-      <li className="mr-4">FAQs</li>
+      <li className="mr-4">
+        <NavLink to="/services">Services</NavLink>
+      </li>
+      <li className="mr-4">
+        <NavLink to="/contact">Contact</NavLink>
+      </li>
+      <li className="mr-4">
+        <NavLink to="/faqs">FAQs</NavLink>
+      </li>
     </ul>
   );
 };
