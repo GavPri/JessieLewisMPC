@@ -9,11 +9,13 @@ const MobileLinks = ({
 }) => {
   return (
     <div onClick={handleMobileLinks}>
-      {showMobileLinks ? (
-        <AiOutlineClose size={20} />
-      ) : (
-        <AiOutlineMenu size={20} />
-      )}
+      <div>
+        {showMobileLinks ? (
+          <AiOutlineClose size={20} />
+        ) : (
+          <AiOutlineMenu size={20} />
+        )}
+      </div>
     </div>
   );
 };
