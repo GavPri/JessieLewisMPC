@@ -19,7 +19,7 @@ const MobileLinks = ({
       <ul
         className={
           showMobileLinks
-            ? "fixed top-24 right-0 rounded-b-md bg-neutral w-full sm:max-w-[800px] sm:m-auto ease-in-out duration-500 z-20 md:hidden"
+            ? "fixed top-24 right-0 rounded-b-md bg-lightest w-full sm:max-w-[800px] sm:m-auto ease-in-out duration-500 z-20 md:hidden"
             : "fixed top-24 right-[-100%] bg-neutral ease-in-out duration-500 rounded-md bg-blue-300 w-full sm:max-w-[800px] sm:m-auto"
         }
       >
