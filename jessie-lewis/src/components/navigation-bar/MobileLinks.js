@@ -1,6 +1,7 @@
 import React from "react";
 // Icons for hamburger menu
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
+import { NavLink } from "react-router-dom";
 
 const MobileLinks = ({
   showMobileLinks,
@@ -24,15 +25,17 @@ const MobileLinks = ({
         }
       >
         <li className="text-darkest font-poppins font-bold pl-4 pb-2 mr-2 w-[50%] mb-4 mt-4 border-b-2 border-dark">
-          About
+          <NavLink to="/about">About</NavLink>
         </li>
         <li className="text-darkest font-poppins font-bold pl-4 pb-2 mr-2 w-[50%] mb-4 mt-4 border-b-2 border-dark">
-          Services
+          <NavLink to="/services">Services</NavLink>
         </li>
         <li className="text-darkest font-poppins font-bold pl-4 pb-2 mr-2 w-[50%] mb-4 mt-4 border-b-2 border-dark">
-          Contact
+          <NavLink to="/contact">Contact</NavLink>
         </li>
-        <li className="text-darkest font-poppins font-bold pl-4 mb-4">FAQs</li>
+        <li className="text-darkest font-poppins font-bold pl-4 mb-4">
+          <NavLink to="/faqs">FAQs</NavLink>
+        </li>
       </ul>
     </div>
   );
