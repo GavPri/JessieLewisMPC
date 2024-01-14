@@ -8,7 +8,7 @@ const MobileLinks = ({
   handleMobileLinks,
 }) => {
   return (
-    <div onClick={handleMobileLinks}>
+    <div onClick={handleMobileLinks} className="md:hidden">
       <div>
         {showMobileLinks ? (
           <AiOutlineClose size={20} />
