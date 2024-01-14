@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Logo from "../Logo";
 import MobileLinks from "./MobileLinks";
+import DesktopLinks from "./DesktopLinks";
 
 const Header = () => {
   // Use state hook for displaying mobile nav links or desktop navlinks
@@ -21,6 +22,7 @@ const Header = () => {
           setShowMobileLinks={setShowMobileLinks}
           handleMobileLinks={handleMobileLinks}
         />
+        <DesktopLinks />
       </nav>
     </header>
   );
