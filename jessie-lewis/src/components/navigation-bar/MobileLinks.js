@@ -19,20 +19,20 @@ const MobileLinks = ({
       <ul
         className={
           showMobileLinks
-            ? "fixed top-24 right-0 rounded-md bg-light w-full sm:max-w-[800px] sm:m-auto ease-in-out duration-500 z-20 md:hidden"
-            : "fixed top-24 right-[-100%] ease-in-out duration-500 rounded-md bg-blue-300 w-full sm:max-w-[800px] sm:m-auto"
+            ? "fixed top-24 right-0 rounded-b-md bg-neutral w-full sm:max-w-[800px] sm:m-auto ease-in-out duration-500 z-20 md:hidden"
+            : "fixed top-24 right-[-100%] bg-neutral ease-in-out duration-500 rounded-md bg-blue-300 w-full sm:max-w-[800px] sm:m-auto"
         }
       >
-        <li className="text-darkest font-bold pl-4 pb-2 mr-2 w-[50%] mb-4 mt-4 border-b-2 border-dark">
+        <li className="text-lightest font-bold pl-4 pb-2 mr-2 w-[50%] mb-4 mt-4 border-b-2 border-dark">
           About
         </li>
-        <li className="text-darkest font-bold pl-4 pb-2 mr-2 w-[50%] mb-4 mt-4 border-b-2 border-dark">
+        <li className="text-lightest font-bold pl-4 pb-2 mr-2 w-[50%] mb-4 mt-4 border-b-2 border-dark">
           Services
         </li>
-        <li className="text-darkest font-bold pl-4 pb-2 mr-2 w-[50%] mb-4 mt-4 border-b-2 border-dark">
+        <li className="text-lightest font-bold pl-4 pb-2 mr-2 w-[50%] mb-4 mt-4 border-b-2 border-dark">
           Contact
         </li>
-        <li className="text-darkest font-bold pl-4 mb-4">FAQs</li>
+        <li className="text-lightest font-bold pl-4 mb-4">FAQs</li>
       </ul>
     </div>
   );

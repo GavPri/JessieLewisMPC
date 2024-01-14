@@ -11,7 +11,7 @@ const Header = () => {
   };
 
   return (
-    <header className="bg-neutral rounded-md sticky mt-2 m-auto max-w-[1240px] min-w-[280px] h-24 flex justify-between items-center p-4">
+    <header className="bg-neutral sticky  m-auto max-w-[1240px] min-w-[280px] h-24 flex justify-between items-center p-4">
       {/* Logo Div */}
       <Logo height={100} />
       {/* End Of Logo Div */}
