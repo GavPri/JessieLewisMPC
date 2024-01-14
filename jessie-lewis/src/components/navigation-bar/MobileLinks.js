@@ -23,10 +23,16 @@ const MobileLinks = ({
             : "fixed top-24 right-[-100%] ease-in-out duration-500 rounded-md bg-blue-300 w-full sm:max-w-[800px] sm:m-auto"
         }
       >
-        <li>About</li>
-        <li>Services</li>
-        <li>Contact</li>
-        <li>FAQs</li>
+        <li className="text-darkest font-bold pl-4 pb-2 mr-2 w-[50%] mb-4 mt-4 border-b-2 border-dark">
+          About
+        </li>
+        <li className="text-darkest font-bold pl-4 pb-2 mr-2 w-[50%] mb-4 mt-4 border-b-2 border-dark">
+          Services
+        </li>
+        <li className="text-darkest font-bold pl-4 pb-2 mr-2 w-[50%] mb-4 mt-4 border-b-2 border-dark">
+          Contact
+        </li>
+        <li className="text-darkest font-bold pl-4 mb-4">FAQs</li>
       </ul>
     </div>
   );
