@@ -5,8 +5,10 @@ function App() {
   return (
     <div>
       <Header />
-      <div className="mt-24">
-        
+      <div>
+        <Switch>
+          <Route exact path="/" render={() => <h1>Home Page!</h1>} />
+        </Switch>
       </div>
     </div>
   );
