@@ -1,5 +1,11 @@
+import Header from "./components/navigation-bar/Header";
+
 function App() {
-  return <div>App clean up</div>;
+  return (
+    <div>
+      <Header />
+    </div>
+  );
 }
 
 export default App;

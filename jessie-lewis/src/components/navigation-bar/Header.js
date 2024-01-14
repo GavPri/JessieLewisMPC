@@ -5,7 +5,7 @@ const Header = () => {
   return (
     <header>
       {/* Logo Div */}
-      <Logo src="/JessieLewis.png" />
+      <Logo height={45} />
       {/* End Of Logo Div */}
     </header>
   );
