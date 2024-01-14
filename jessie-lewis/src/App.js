@@ -8,6 +8,17 @@ function App() {
       <div>
         <Switch>
           <Route exact path="/" render={() => <h1>Home Page!</h1>} />
+          <Route
+            exact
+            path="/services"
+            render={() => <h1>Services Page!</h1>}
+          />
+          <Route exact path="/contact" render={() => <h1>Contact Page!</h1>} />
+          <Route
+            exact
+            path="/faqs"
+            render={() => <h1>Frequently Asked Questions!</h1>}
+          />
         </Switch>
       </div>
     </div>
