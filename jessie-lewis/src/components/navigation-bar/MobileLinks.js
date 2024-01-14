@@ -16,7 +16,8 @@ const MobileLinks = ({
           <AiOutlineMenu size={20} />
         )}
       </div>
-      <ul>
+      <ul className={showMobileLinks ? "fixed top-24 right-0" : "fixed top-24 right-[-100%]"
+      }>
         <li>About</li>
         <li>Services</li>
         <li>Contact</li>
