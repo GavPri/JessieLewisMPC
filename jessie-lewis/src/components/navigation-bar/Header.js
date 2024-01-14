@@ -1,7 +1,11 @@
 import React from "react";
 
 const Header = () => {
-  return <header></header>;
+  return <header>
+    {/* Logo Div */}
+
+    {/* End Of Logo Div */}
+  </header>;
 };
 
 export default Header;
