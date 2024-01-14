@@ -9,7 +9,7 @@ const MobileLinks = ({
 }) => {
   return (
     <div onClick={handleMobileLinks} className="md:hidden">
-      <div>
+      <div className="text-darkest">
         {showMobileLinks ? (
           <AiOutlineClose size={20} />
         ) : (
