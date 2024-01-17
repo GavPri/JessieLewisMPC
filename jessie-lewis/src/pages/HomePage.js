@@ -23,6 +23,13 @@ const HomePage = () => {
           icon={<AiOutlineArrowRight />}
         />
       </div>
+      <div className="w-full flex justify-center items-center">
+        <img
+          src="/jessie-banner.png"
+          alt="jessie lewis graduating"
+          className="w-5/6 rounded-lg drop-shadow-lg shadow-neutral"
+        />
+      </div>
     </div>
   );
 };
