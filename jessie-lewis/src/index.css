@@ -23,10 +23,8 @@ code {
     monospace;
 }
 
-li {
-  letter-spacing: 2px;
-}
-
-h2 {
+li,
+h2,
+p {
   letter-spacing: 2px;
 }
