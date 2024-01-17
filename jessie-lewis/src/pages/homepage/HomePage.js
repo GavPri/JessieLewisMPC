@@ -31,7 +31,9 @@ const HomePage = () => {
             to="/about"
           />
         </div>
-        <div><SocialMediaLinks/></div>
+        <div className="hidden md:flex md:w-full">
+          <SocialMediaLinks />
+        </div>
       </div>
       <div className="w-full flex justify-center items-center">
         <img

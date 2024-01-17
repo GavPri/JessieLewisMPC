@@ -8,29 +8,23 @@ import {
 
 const SocialMediaLinks = () => {
   return (
-    <ul className="flex font-poppins text-dark">
-      <li className="mr-2">
+    <ul className="w-5/6 flex justify-between font-poppins text-dark font-bold p-4">
+      <li className="mr-2 flex justify-center items-center hover:text-tealAccent hover:cursor-pointer">
         Instagram
-        <span>
+        <span className="ml-2">
           <AiOutlineInstagram />
         </span>
       </li>
-      <li className="mr-2">
+      <li className="mr-2 flex justify-center items-center hover:cursor-pointer hover:text-tealAccent">
         Facebook
-        <span>
+        <span className="ml-2">
           <AiOutlineFacebook />
         </span>
       </li>
-      <li className="mr-2">
+      <li className="mr-2 flex justify-center items-center hover:cursor-pointer hover:text-tealAccent">
         Twitter
-        <span>
+        <span className="ml-2">
           <AiOutlineTwitter />
-        </span>
-      </li>
-      <li>
-        Youtube
-        <span>
-          <AiOutlineYoutube />
         </span>
       </li>
     </ul>
