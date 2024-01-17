@@ -25,6 +25,7 @@ code {
 
 li,
 h2,
-p {
+p,
+button {
   letter-spacing: 2px;
 }

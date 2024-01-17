@@ -5,14 +5,14 @@ import { AiOutlineArrowRight } from "react-icons/ai";
 const HomePage = () => {
   return (
     <div className="min-h-screen bg-lightest min-w-screen">
-      <h2 className="font-bold font-poppins text-3xl  w-2/3 p-4 text-darkest">
+      <h2 className="font-bold font-poppins text-3xl  p-4 text-darkest">
         Mental Mastery For Peak Performance
       </h2>
-      <p className="p-4 font-poppins text-dark w-5/6 font-bold">
+      <p className="p-4 font-poppins text-dark  font-bold">
         Peak performance is a mindset. Let us guide you through proven
         techniques to optimize your cognitive abilities and achieve your goals
       </p>
-      <div className="p-4 w-5/6 pt-0">
+      <div className="p-4 w-full flex justify-center items-center">
         <Button type="button" text="Services" icon={<AiOutlineArrowRight />} />
       </div>
     </div>
