@@ -1,6 +1,7 @@
 import React from "react";
+import { NavLink } from "react-router-dom/cjs/react-router-dom.min";
 
-const Button = ({ type, onClick, className, text, variant, icon }) => {
+const Button = ({ type, onClick, className, text, variant, icon, to }) => {
   const getButtonVariant = () => {
     switch (variant) {
       case "secondary":
@@ -15,7 +16,7 @@ const Button = ({ type, onClick, className, text, variant, icon }) => {
       onClick={onClick}
       className={`flex justify-center items-center text-xl w-10/12 py-2 px-4 font-poppins font-bold ${getButtonVariant()} ${className}`}
     >
-      {text}
+      <NavLink to={to}>{text}</NavLink>
       {icon && <span className="ml-2 rotate-[-45deg]">{icon}</span>}
     </button>
   );

@@ -1,5 +1,5 @@
 import React from "react";
-import Button from "../components/Button";
+import Button from "../../components/Button";
 import { AiOutlineArrowRight } from "react-icons/ai";
 
 const HomePage = () => {
@@ -18,6 +18,7 @@ const HomePage = () => {
             type="button"
             text="Services"
             icon={<AiOutlineArrowRight />}
+            to="/services"
           />
         </div>
         <div className="p-4 w-full flex justify-center items-center md:items-start md:justify-start">
@@ -26,6 +27,7 @@ const HomePage = () => {
             text="About Jessie"
             variant="secondary"
             icon={<AiOutlineArrowRight />}
+            to="/about"
           />
         </div>
       </div>
