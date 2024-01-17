@@ -2,6 +2,7 @@ import React from "react";
 import Button from "../../components/Button";
 import { AiOutlineArrowRight } from "react-icons/ai";
 import SocialMediaLinks from "../../components/SocialMediaLinks";
+import AboutMeIntro from "./AboutMeIntro";
 
 const HomePage = () => {
   return (
