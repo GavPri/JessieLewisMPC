@@ -13,7 +13,7 @@ const Button = ({ type, onClick, className, text, variant }) => {
     <button
       type={type}
       onClick={onClick}
-      className={`py-2 px-4 font-poppins font-bold ${getButtonVariant()} ${className}`}
+      className={`w-[80%] py-2 px-4 font-poppins font-bold ${getButtonVariant()} ${className}`}
     >
       {text}
     </button>
