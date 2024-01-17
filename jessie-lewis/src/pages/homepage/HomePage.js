@@ -1,6 +1,7 @@
 import React from "react";
 import Button from "../../components/Button";
 import { AiOutlineArrowRight } from "react-icons/ai";
+import SocialMediaLinks from "../../components/SocialMediaLinks";
 
 const HomePage = () => {
   return (
@@ -30,6 +31,7 @@ const HomePage = () => {
             to="/about"
           />
         </div>
+        <div><SocialMediaLinks/></div>
       </div>
       <div className="w-full flex justify-center items-center">
         <img
