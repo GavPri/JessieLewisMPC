@@ -5,8 +5,12 @@ import AboutMeIntro from "./AboutMeIntro";
 const HomePage = () => {
   return (
     <div>
-      <HeroSection />
-      <AboutMeIntro />
+      <div className="mb-2">
+        <HeroSection />
+      </div>
+      <div>
+        <AboutMeIntro />
+      </div>
     </div>
   );
 };
