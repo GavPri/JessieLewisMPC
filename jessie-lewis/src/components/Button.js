@@ -1,6 +1,6 @@
 import React from "react";
 
-const Button = ({ type, onClick, className, text, variant }) => {
+const Button = ({ type, onClick, className, text, variant, icon }) => {
   const getButtonVariant = () => {
     switch (variant) {
       case "secondary":
@@ -13,9 +13,10 @@ const Button = ({ type, onClick, className, text, variant }) => {
     <button
       type={type}
       onClick={onClick}
-      className={`w-[80%] py-2 px-4 font-poppins font-bold ${getButtonVariant()} ${className}`}
+      className={`flex justify-center items-center  w-[80%] py-2 px-4 font-poppins font-bold ${getButtonVariant()} ${className}`}
     >
       {text}
+      {icon && <span className="ml-2 rotate-[-45deg]">{icon}</span>}
     </button>
   );
 };

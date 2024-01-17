@@ -1,5 +1,6 @@
 import React from "react";
 import Button from "../components/Button";
+import { AiOutlineArrowRight } from "react-icons/ai";
 
 const HomePage = () => {
   return (
@@ -12,7 +13,7 @@ const HomePage = () => {
         techniques to optimize your cognitive abilities and achieve your goals
       </p>
       <div className="p-4 w-5/6 pt-0">
-        <Button type="button" text="Services" />
+        <Button type="button" text="Services" icon={<AiOutlineArrowRight />} />
       </div>
     </div>
   );
