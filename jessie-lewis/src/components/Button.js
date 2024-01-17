@@ -14,7 +14,7 @@ const Button = ({ type, onClick, className, text, variant, icon, to }) => {
     <button
       type={type}
       onClick={onClick}
-      className={`flex justify-center items-center text-xl w-fit py-2 px-4 font-poppins font-bold  ${getButtonVariant()} ${className}`}
+      className={`w-4/6 flex justify-center items-center text-xl py-2 px-4 font-poppins font-bold  ${getButtonVariant()} ${className}`}
     >
       <NavLink to={to}>{text}</NavLink>
       {icon && <span className="ml-2 rotate-[-45deg]">{icon}</span>}
