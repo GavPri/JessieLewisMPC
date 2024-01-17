@@ -15,7 +15,7 @@ const HeroSection = () => {
           Peak performance is a mindset. Let us guide you through proven
           techniques to optimize your cognitive abilities and achieve your goals
         </p>
-        <div className="p-4 w-full flex justify-center items-center md:items-start md:justify-start">
+        <div className="p-4 w-full flex items-start justify-start ">
           <Button
             type="button"
             text="Services"
@@ -23,7 +23,7 @@ const HeroSection = () => {
             to="/services"
           />
         </div>
-        <div className="p-4 w-full flex justify-center items-center md:items-start md:justify-start">
+        <div className="p-4 w-full flex justify-start items-start">
           <Button
             type="button"
             text="About Jessie"

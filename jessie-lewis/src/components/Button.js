@@ -7,7 +7,7 @@ const Button = ({ type, onClick, className, text, variant, icon, to }) => {
       case "secondary":
         return " bg-lightest font-poppins font-bold rounded-md text-cyanAccent border-2 border-transparent hover:border-lightest hover:bg-cyanAccent hover:text-lightest transition-all duration-500";
       default:
-        return " bg-tealAccent text-lightest border-2 border-light font-poppins font-bold rounded-md hover:bg-lightest hover:text-tealAccent hover:border-2 hover:border-tealAccent ";
+        return " bg-tealAccent text-lightest border-2 border-light font-poppins font-bold rounded-md hover:bg-lightest hover:text-tealAccent hover:border-2 hover:border-tealAccent transition-all duration-500";
     }
   };
   return (

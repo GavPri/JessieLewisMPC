@@ -32,8 +32,8 @@ const AboutMeIntro = () => {
             voluptatum!
           </p>
         </div>
-        <div className="md:flex md:flew-row md:w-4/6 md:justify-between md:items-start p-6 order-last">
-          <div className="mb-4">
+        <div className="md:flex md:flex-col md:w-full md:justify-between md:items-start p-6 order-last">
+          <div className="md:w-1/2 mb-4">
             <Button
               to="/about"
               variant="secondary"
@@ -41,7 +41,13 @@ const AboutMeIntro = () => {
               icon={<AiOutlineArrowRight />}
             />
           </div>
-          <Button text="Contact Me" to="/contact" icon={<AiOutlineMessage />} />
+          <div className="md:w-1/2">
+            <Button
+              text="Contact Me"
+              to="/contact"
+              icon={<AiOutlineMessage />}
+            />
+          </div>
         </div>
       </div>
     </div>
