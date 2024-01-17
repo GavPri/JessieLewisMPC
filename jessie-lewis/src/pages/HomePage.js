@@ -15,6 +15,14 @@ const HomePage = () => {
       <div className="p-4 w-full flex justify-center items-center">
         <Button type="button" text="Services" icon={<AiOutlineArrowRight />} />
       </div>
+      <div className="p-4 w-full flex justify-center items-center">
+        <Button
+          type="button"
+          text="About Jessie"
+          variant="secondary"
+          icon={<AiOutlineArrowRight />}
+        />
+      </div>
     </div>
   );
 };
