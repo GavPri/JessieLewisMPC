@@ -10,23 +10,25 @@ const ServicesIntro = () => {
           Services
         </h3>
       </div>
-      {servicesData.services.map((service, index) => (
-        <div
-          key={index}
-          className="text-lightest bg-tealAccent mt-4 rounded-lg p-4 border-2 border-transparent hover:border-tealAccent hover:text-darkest hover:bg-lightest transition-all duration-500"
-        >
-          <div className="flex justify-start items-center max-w-readable">
-            <h4 className="text-2xl font-poppins mb-2 uppercase">
-              {service.serviceName}
-            </h4>
-            <p className="hidden md:text-4xl md:mb-2 ml-auto md:order-1">
-              {service.servicesIcon}
-            </p>
+      <div className="md:flex">
+        {servicesData.services.map((service, index) => (
+          <div
+            key={index}
+            className="md:mx-4 md:flex md:flex-col md:justify-between md:items-start text-lightest bg-tealAccent mt-4 rounded-lg p-4 border-2 border-transparent hover:border-tealAccent hover:text-darkest hover:bg-lightest transition-all duration-500"
+          >
+            <div className="flex justify-start items-center max-w-readable ">
+              <h4 className="text-2xl font-poppins mb-2 uppercase">
+                {service.serviceName}
+              </h4>
+              <p className="hidden md:text-4xl md:mb-2 ml-auto md:order-1">
+                {service.servicesIcon}
+              </p>
+            </div>
+            <p className="mb-2 font-bold">{service.shortServiceIntro}</p>
+            <Button to="/services" text="Learn More" />
           </div>
-          <p className="mb-2">{service.shortServiceIntro}</p>
-          <Button to="/services" text="Learn More" />
-        </div>
-      ))}
+        ))}
+      </div>
     </div>
   );
 };
