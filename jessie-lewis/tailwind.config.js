@@ -7,6 +7,8 @@ module.exports = {
       neutral: "#a6a6a6",
       light: "#d9d9d9",
       lightest: "#f9f9f9",
+      tealAccent: "#14b8a6",
+      cyanAccent: "#06b6d4",
     },
     extend: {
       fontFamily: {

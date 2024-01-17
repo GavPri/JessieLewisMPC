@@ -30,16 +30,3 @@ button {
   letter-spacing: 2px;
 }
 
-@layer utilities {
-  .blur-clip {
-    clip-path: polygon(
-      52% 10%,
-      100% 10%,
-      78% 44%,
-      44% 58%,
-      9% 64%,
-      0% 60%,
-      35% 39%
-    );
-  }
-}

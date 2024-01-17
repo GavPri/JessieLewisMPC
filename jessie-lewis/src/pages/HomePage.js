@@ -31,7 +31,6 @@ const HomePage = () => {
           className="w-5/6 rounded-lg drop-shadow-lg shadow-neutral"
         />
       </div>
-      <Blur />
     </div>
   );
 };
