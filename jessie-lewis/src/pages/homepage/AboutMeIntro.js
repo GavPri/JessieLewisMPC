@@ -8,13 +8,13 @@ import {
 
 const AboutMeIntro = () => {
   return (
-    <div className="max-w-[1240px] bg-lightest m-auto p-4 rounded-md md:flex md:flex-row flex-col-reverse mb-2">
+    <div className="flex max-w-[1240px] bg-lightest m-auto p-4 rounded-md  mb-2">
       {/* ImageDiv */}
-      <div className="w-full md:basis-[33%] ">
+      <div className=" hidden md:flex md:mr-2  md:basis-[33%] ">
         <img
           src="/AboutMeIntro.png"
           alt=""
-          className="h-full w-5/6 md:w-full m-auto rounded-lg"
+          className="w-full m-auto md:mr-auto rounded-lg"
         />
       </div>
       {/* TextDiv */}
@@ -23,7 +23,7 @@ const AboutMeIntro = () => {
           <h3 className="text-darkest font-poppins font-bold text-3xl pb-2 border-b-2 mb-2  border-b-dark">
             About Me
           </h3>
-          <p className="max-w-readable">
+          <p className="max-w-readable mb-2">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis
             reiciendis debitis numquam veniam amet perspiciatis provident nemo
             perferendis totam illo itaque fugit, architecto expedita facilis
@@ -32,7 +32,7 @@ const AboutMeIntro = () => {
             voluptatum!
           </p>
         </div>
-        <div className="flex w-full justify-between items-center p-6 order-last">
+        <div className="flex flex-col md:w-full justify-between items-center p-6 order-last">
           <Button
             to="/about"
             variant="secondary"

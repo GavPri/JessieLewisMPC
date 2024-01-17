@@ -40,7 +40,7 @@ const HeroSection = () => {
         <img
           src="/jessie-banner.png"
           alt="jessie lewis graduating"
-          className="w-5/6 rounded-lg drop-shadow-lg shadow-neutral"
+          className="w-full rounded-lg drop-shadow-lg shadow-neutral"
         />
       </div>
     </div>
