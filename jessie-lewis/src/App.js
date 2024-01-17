@@ -1,5 +1,6 @@
 import Header from "./components/navigation-bar/Header";
 import { Route, Switch } from "react-router-dom";
+import HomePage from "./pages/HomePage";
 
 function App() {
   return (
@@ -7,7 +8,7 @@ function App() {
       <Header />
       <div>
         <Switch>
-          <Route exact path="/" render={() => <h1>Home Page!</h1>} />
+          <Route exact path="/" render={() => <HomePage />} />
           <Route exact path="/about" render={() => <h1>About Page!</h1>} />
           <Route
             exact
