@@ -1,4 +1,5 @@
 import React from "react";
+import servicesData from "../../data/services-data/servicesData";
 
 const ServicesIntro = () => {
   return (
