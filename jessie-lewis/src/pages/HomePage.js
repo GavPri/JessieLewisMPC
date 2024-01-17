@@ -6,7 +6,10 @@ const HomePage = () => {
       <h2 className="font-bold font-poppins text-3xl text-dark w-2/3 p-4">
         Mental Mastery For Peak Performance
       </h2>
-      
+      <p>
+        Peak performance is a mindset. Let us guide you through proven
+        techniques to optimize your cognitive abilities and achieve your goals
+      </p>
     </div>
   );
 };
