@@ -10,7 +10,7 @@ const AboutMeIntro = () => {
       {/* TextDiv */}
       <div className="basis-[67%] p-4 mb-2 ">
         <h3 className="text-darkest font-poppins font-bold mb-2">About Me</h3>
-        <p className="">
+        <p className="max-w-readable">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic dolores
           facilis voluptates, ut animi impedit facere assumenda eos suscipit
           maiores cum officia, eaque pariatur, asperiores labore cupiditate
