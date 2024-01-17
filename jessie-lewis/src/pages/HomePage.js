@@ -1,6 +1,7 @@
 import React from "react";
 import Button from "../components/Button";
 import { AiOutlineArrowRight } from "react-icons/ai";
+import Blur from "../components/Blur";
 
 const HomePage = () => {
   return (
@@ -30,6 +31,7 @@ const HomePage = () => {
           className="w-5/6 rounded-lg drop-shadow-lg shadow-neutral"
         />
       </div>
+      <Blur />
     </div>
   );
 };
