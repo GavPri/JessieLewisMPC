@@ -8,10 +8,14 @@ import {
 
 const AboutMeIntro = () => {
   return (
-    <div className="max-w-[1240px] bg-lightest m-auto rounded-md flex mb-2">
+    <div className="max-w-[1240px] bg-lightest m-auto p-4 rounded-md md:flex  mb-2">
       {/* ImageDiv */}
-      <div className="basis-[33%]">
-        <img src="/AboutMeIntro.png" alt="" className="h-full" />
+      <div className="w-full md:basis-[33%] ">
+        <img
+          src="/AboutMeIntro.png"
+          alt=""
+          className="h-full w-5/6 m-auto rounded-lg"
+        />
       </div>
       {/* TextDiv */}
       <div className="flex flex-col">
