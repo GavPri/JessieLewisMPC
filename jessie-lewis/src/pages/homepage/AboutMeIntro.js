@@ -32,13 +32,15 @@ const AboutMeIntro = () => {
             voluptatum!
           </p>
         </div>
-        <div className="flex flex-col md:w-full justify-between items-center p-6 order-last">
-          <Button
-            to="/about"
-            variant="secondary"
-            text="Learn More"
-            icon={<AiOutlineArrowRight />}
-          />
+        <div className="md:flex md:flew-row md:w-4/6 md:justify-between md:items-start p-6 order-last">
+          <div className="mb-4">
+            <Button
+              to="/about"
+              variant="secondary"
+              text="Learn More"
+              icon={<AiOutlineArrowRight />}
+            />
+          </div>
           <Button text="Contact Me" to="/contact" icon={<AiOutlineMessage />} />
         </div>
       </div>
