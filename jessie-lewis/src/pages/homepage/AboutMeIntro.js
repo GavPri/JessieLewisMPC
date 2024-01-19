@@ -15,7 +15,7 @@ const AboutMeIntro = () => {
     backgroundRepeat: "no-repeat",
   };
   return (
-    <div className="flex max-w-[1240px] bg-light m-auto p-4 rounded-md  mb-2">
+    <div className="flex max-w-[1240px] bg-transparent m-auto p-4 rounded-md  mb-2">
       {/* ImageDiv */}
       <div
         style={divStyle}
