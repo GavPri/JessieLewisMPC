@@ -11,10 +11,10 @@ const HomePage = () => {
         <HeroSection />
       </div>
       <div>
-        <AboutMeIntro />
+        <ServicesIntro />
       </div>
       <div>
-        <ServicesIntro />
+        <AboutMeIntro />
       </div>
       <div>
         <ContactMeIntro />
