@@ -5,7 +5,7 @@ import {
   AiOutlineMessage,
   AiOutlinePhone,
 } from "react-icons/ai";
-import about from "../../images/about-me.jpeg";
+import about from "../../images/jessie-banner.png";
 
 const AboutMeIntro = () => {
   const divStyle = {

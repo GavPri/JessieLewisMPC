@@ -36,6 +36,7 @@ const MobileLinks = ({
         <li className="text-darkest font-poppins font-bold pl-4 mb-4">
           <NavLink to="/faqs">FAQs</NavLink>
         </li>
+        <div className="absolute top-0 left-0 h-screen w-screen bg-lightest opacity-90 z-[-10]"></div>
       </ul>
     </div>
   );
