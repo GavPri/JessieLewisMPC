@@ -5,6 +5,9 @@ const DesktopLinks = () => {
   return (
     <ul className="hidden md:flex text-darkest">
       <li className="mr-4">
+        <NavLink to="/">Home</NavLink>
+      </li>
+      <li className="mr-4">
         <NavLink to="/about">About</NavLink>
       </li>
       <li className="mr-4">
