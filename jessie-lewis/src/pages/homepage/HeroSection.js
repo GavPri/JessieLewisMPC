@@ -2,16 +2,34 @@ import React from "react";
 import Button from "../../components/Button";
 import { AiOutlineArrowRight } from "react-icons/ai";
 import SocialMediaLinks from "../../components/SocialMediaLinks";
-
+import banner from "../../images/banner.jpeg";
 
 const HeroSection = () => {
+  const divStyle = {
+    backgroundImage: `url(${banner})`,
+    backgroundSize: "cover", // Optional: You can adjust these styles based on your requirements
+    backgroundPosition: "top, left",
+    backgroundRepeat: "no-repeat",
+  };
+  const glassStyle = {
+    background: "linear-gradient (135deg(255,255,255, 0.1), (255,255,255, 0))",
+    backdropFilter: "blur(10px)",
+    borderRadius: "20px",
+    border: "2px, solid rgba()",
+  };
   return (
-    <div className="min-h-fit p-4 rounded-md bg-lightest min-w-screen md:max-w-[1240px] md:m-auto md:flex md:justify-between md:items-start">
-      <div className="md:rounded md:flex md:flex-col md:justify-evenly md:items-start">
-        <h2 className="font-extrabold font-poppins text-3xl md:text-4xl  p-4 text-darkest">
+    <div
+      style={divStyle}
+      className="min-h-fit p-4 rounded-md min-w-screen md:max-w-[1240px] md:m-auto md:flex md:justify-between md:items-start"
+    >
+      <div
+        style={glassStyle}
+        className=" w-full md:mr-auto md:rounded md:flex md:flex-col md:justify-evenly md:items-start md:w-1/2"
+      >
+        <h2 className=" mix-blend-darken font-extrabold font-poppins text-3xl md:text-4xl  p-4 text-lightest">
           Mental Mastery For Peak Performance
         </h2>
-        <p className="p-4 font-poppins text-dark text-xl md:text-2xl font-bold">
+        <p className="p-4 font-poppins text-lightest text-xl md:text-2xl font-bold">
           Peak performance is a mindset. Let us guide you through proven
           techniques to optimize your cognitive abilities and achieve your goals
         </p>
@@ -35,13 +53,6 @@ const HeroSection = () => {
         <div className="hidden md:flex md:w-full">
           <SocialMediaLinks />
         </div>
-      </div>
-      <div className="w-full flex justify-center items-center">
-        <img
-          src="/jessie-banner.png"
-          alt="jessie lewis graduating"
-          className="w-full rounded-lg drop-shadow-lg shadow-neutral"
-        />
       </div>
     </div>
   );
