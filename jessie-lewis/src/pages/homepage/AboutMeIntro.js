@@ -5,17 +5,27 @@ import {
   AiOutlineMessage,
   AiOutlinePhone,
 } from "react-icons/ai";
+import about from "../../images/about-me.jpeg";
 
 const AboutMeIntro = () => {
+  const divStyle = {
+    backgroundImage: `url(${about})`,
+    backgroundSize: "cover", // Optional: You can adjust these styles based on your requirements
+    backgroundPosition: "center",
+    backgroundRepeat: "no-repeat",
+  };
   return (
     <div className="flex max-w-[1240px] bg-lightest m-auto p-4 rounded-md  mb-2">
       {/* ImageDiv */}
-      <div className=" hidden md:flex md:mr-2  md:basis-[33%] ">
-        <img
+      <div
+        style={divStyle}
+        className=" hidden md:flex md:mr-2  md:basis-[33%] md:rounded-md "
+      >
+        {/* <img
           src="/AboutMeIntro.png"
           alt=""
           className="w-full m-auto md:mr-auto rounded-lg"
-        />
+        /> */}
       </div>
       {/* TextDiv */}
       <div className="flex flex-col">
