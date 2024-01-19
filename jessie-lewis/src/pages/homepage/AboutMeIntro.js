@@ -21,11 +21,7 @@ const AboutMeIntro = () => {
         style={divStyle}
         className=" hidden md:flex md:mr-2  md:basis-[33%] md:rounded-md "
       >
-        {/* <img
-          src="/AboutMeIntro.png"
-          alt=""
-          className="w-full m-auto md:mr-auto rounded-lg"
-        /> */}
+       
       </div>
       {/* TextDiv */}
       <div className="flex flex-col">
