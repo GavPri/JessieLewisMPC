@@ -6,7 +6,7 @@ import ContactMeIntro from "./ContactMeIntro";
 
 const HomePage = () => {
   return (
-    <div>
+    <div className="mt-24">
       <div className="mb-2">
         <HeroSection />
       </div>
