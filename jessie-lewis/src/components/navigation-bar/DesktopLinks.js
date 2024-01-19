@@ -8,10 +8,10 @@ const DesktopLinks = () => {
         <NavLink to="/">Home</NavLink>
       </li>
       <li className="mr-4">
-        <NavLink to="/about">About</NavLink>
+        <NavLink to="/services">Services</NavLink>
       </li>
       <li className="mr-4">
-        <NavLink to="/services">Services</NavLink>
+        <NavLink to="/about">About</NavLink>
       </li>
       <li className="mr-4">
         <NavLink to="/contact">Contact</NavLink>

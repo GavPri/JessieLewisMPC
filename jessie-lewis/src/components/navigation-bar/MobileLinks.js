@@ -28,10 +28,10 @@ const MobileLinks = ({
           <NavLink to="/">Home</NavLink>
         </li>
         <li className="text-darkest font-poppins font-bold pl-4 pb-2 mr-2 w-[50%] mb-4 mt-4 border-b-2 border-dark">
-          <NavLink to="/about">About</NavLink>
+          <NavLink to="/services">Services</NavLink>
         </li>
         <li className="text-darkest font-poppins font-bold pl-4 pb-2 mr-2 w-[50%] mb-4 mt-4 border-b-2 border-dark">
-          <NavLink to="/services">Services</NavLink>
+          <NavLink to="/about">About</NavLink>
         </li>
         <li className="text-darkest font-poppins font-bold pl-4 pb-2 mr-2 w-[50%] mb-4 mt-4 border-b-2 border-dark">
           <NavLink to="/contact">Contact</NavLink>
