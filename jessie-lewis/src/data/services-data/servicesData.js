@@ -1,8 +1,10 @@
 import { FaUser, FaUsers, FaMicrophone } from "react-icons/fa";
+import about from "../../images/about-me.jpeg";
+import banner from "../../images/banner.jpeg";
 const servicesData = {
   services: [
     {
-      serviceName: "1 on 1 mental performance coaching",
+      serviceName: "1 on 1 mental coaching",
       shortServiceIntro:
         "Personalized coaching sessions tailored to enhance your mental performance.",
       serviceDescription:

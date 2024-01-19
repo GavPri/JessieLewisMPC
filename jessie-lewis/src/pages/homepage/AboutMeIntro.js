@@ -15,14 +15,12 @@ const AboutMeIntro = () => {
     backgroundRepeat: "no-repeat",
   };
   return (
-    <div className="flex max-w-[1240px] bg-lightest m-auto p-4 rounded-md  mb-2">
+    <div className="flex max-w-[1240px] bg-light m-auto p-4 rounded-md  mb-2">
       {/* ImageDiv */}
       <div
         style={divStyle}
         className=" hidden md:flex md:mr-2  md:basis-[33%] md:rounded-md "
-      >
-       
-      </div>
+      ></div>
       {/* TextDiv */}
       <div className="flex flex-col">
         <div className="basis-[67%] p-6 flex flex-col">
