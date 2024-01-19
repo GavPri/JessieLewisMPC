@@ -14,7 +14,7 @@ const ServicesIntro = () => {
         {servicesData.services.map((service, index) => (
           <div
             key={index}
-            className="md:mx-4 md:flex md:flex-col md:justify-between md:items-start text-lightest bg-tealAccent mt-4 rounded-lg p-4 border-2 border-transparent hover:border-tealAccent hover:text-darkest hover:bg-lightest transition-all duration-500"
+            className="md:mx-4 md:flex md:flex-col md:justify-between md:items-start text-lightest bg-seafoam mt-4 rounded-lg p-4 border-2 border-transparent hover:border-seafoam hover:text-darkest hover:bg-lightest transition-all duration-500"
           >
             <div className="flex justify-start items-center max-w-readable ">
               <h4 className="text-2xl font-poppins mb-2 uppercase">

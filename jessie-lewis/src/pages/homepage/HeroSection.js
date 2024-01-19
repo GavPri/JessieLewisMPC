@@ -11,21 +11,13 @@ const HeroSection = () => {
     backgroundPosition: "top, left",
     backgroundRepeat: "no-repeat",
   };
-  const glassStyle = {
-    background: "linear-gradient (135deg(255,255,255, 0.1), (255,255,255, 0))",
-    backdropFilter: "blur(10px)",
-    borderRadius: "20px",
-    border: "2px, solid rgba()",
-  };
+
   return (
     <div
       style={divStyle}
       className="min-h-fit p-4 rounded-md min-w-screen md:max-w-[1240px] md:m-auto md:flex md:justify-between md:items-start"
     >
-      <div
-        style={glassStyle}
-        className=" w-full md:mr-auto md:rounded md:flex md:flex-col md:justify-evenly md:items-start md:w-1/2"
-      >
+      <div className=" glass w-full md:mr-auto md:rounded md:flex md:flex-col md:justify-evenly md:items-start md:w-1/2">
         <h2 className=" mix-blend-darken font-extrabold font-poppins text-3xl md:text-4xl  p-4 text-lightest">
           Mental Mastery For Peak Performance
         </h2>
