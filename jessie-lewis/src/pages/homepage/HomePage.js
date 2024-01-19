@@ -2,6 +2,7 @@ import React from "react";
 import HeroSection from "./HeroSection";
 import AboutMeIntro from "./AboutMeIntro";
 import ServicesIntro from "./ServicesIntro";
+import ContactMeIntro from "./ContactMeIntro";
 
 const HomePage = () => {
   return (
@@ -14,6 +15,9 @@ const HomePage = () => {
       </div>
       <div>
         <ServicesIntro />
+      </div>
+      <div>
+        <ContactMeIntro />
       </div>
     </div>
   );
