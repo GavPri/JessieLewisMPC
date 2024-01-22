@@ -10,23 +10,27 @@ const FaqsAccordion = () => {
   };
 
   return (
-    <div className="w-full h-fit mt-4">
+    <div className="w-full h-fit mt-4 overscroll-y-contain">
       {faqsData.map((faq, index) => (
         <>
           <div
             key={index}
-            className="w-10/12 h-fit rounded-md bg-lightest text-darkest py-4 px-6 hover:cursor-pointer mb-4"
+            className="w-10/12   rounded-md text-darkest pb-4 px-6 md:px-0 hover:cursor-pointer mb-4"
           >
             <div
-              className="flex justify-between items-center relative"
+              className={`flex justify-between items-center relative ${
+                openAccordion === index
+                  ? "pb-2 border-b-2 border-b-darkest transition-all duration-300"
+                  : "transition-all duration-300"
+              }`}
               onClick={() => handleAccordion(index)}
             >
-              <p>{faq.question}</p>
+              <h2 className="font-bold font-poppins">{faq.question}</h2>
               <p
                 className={
                   openAccordion
-                    ? "rotate-45 transition-all duration-300 ease-in-out"
-                    : "transition-all duration-300 ease-in-out"
+                    ? " transition-all duration-300 ease-in-out"
+                    : "rotate-45 transition-all duration-300 ease-in-out"
                 }
               >
                 <AiOutlinePlus size={20} />

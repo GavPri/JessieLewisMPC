@@ -4,11 +4,7 @@ const faqsData = [
     answer:
       "Mental performance consulting is about providing clients with essential mental tools to be able to perform in high-stress conditions, overcome obstacles, be resilient, live in the present moment, and learn to manage their stress and anxiety. My philosophy of practice centers around the principles of mindfulness, self-awareness and self-confidence in order to build a strong foundation to face life's challenges.",
   },
-  {
-    question: "Are these sessions specifically for elite athletes?",
-    answer:
-      "These sessions are not meant for just elite athletes. Rather, mental skills training can be useful for anyone in performance settings whether that is for athletes, musicians, firemen, public speakers, businessmen, you name it. The goal is for clients to utilize these mental skills in high-pressured situations to optimize performance and presence in all facets of their life.",
-  },
+
   {
     question: "What does each session entail?",
     answer:
@@ -25,6 +21,11 @@ const faqsData = [
       "How can you measure your progress working with a mental performance coach?",
     answer:
       "The evaluation of mental skills training extends beyond mere performance outcomes. While performance is a crucial aspect, progress can be measured through regular self-check-ins to assess adherence to our process goals. Additionally, feedback from teammates, coaches, and the broader team offers insights into how well we are managing our emotions and stress levels. A top performer cannot be the best on their own; it requires a strong support system. Having a reliable support system ensures individuals have a foundation to lean on and remain accountable for their ongoing growth and success.",
+  },
+  {
+    question: "Are these sessions specifically for elite athletes?",
+    answer:
+      "These sessions are not meant for just elite athletes. Rather, mental skills training can be useful for anyone in performance settings whether that is for athletes, musicians, firemen, public speakers, businessmen, you name it. The goal is for clients to utilize these mental skills in high-pressured situations to optimize performance and presence in all facets of their life.",
   },
 ];
 
