@@ -19,7 +19,7 @@ const HeroSection = () => {
     >
       <div className=" glass w-full md:mr-auto md:rounded md:flex md:flex-col md:justify-evenly md:items-start md:w-1/2">
         <h2 className=" mix-blend-darken font-extrabold font-poppins text-3xl md:text-4xl  p-4 text-lightest">
-          Mental Mastery For Peak Performance
+          Prioritize your mind, body, and craft.
         </h2>
         <p className="p-4 font-poppins text-lightest text-xl md:text-2xl font-bold">
           Peak performance is a mindset. Let us guide you through proven
