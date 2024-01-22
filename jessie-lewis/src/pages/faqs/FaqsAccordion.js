@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { AiOutlinePlus } from "react-icons/ai";
+import faqsData from "../../data/faq-data/FaqsData";
 
 const FaqsAccordion = () => {
   const [openAccordion, setOpenAccordion] = useState(false);
