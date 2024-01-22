@@ -1,9 +1,7 @@
-import React from 'react'
+import React from "react";
 
 const Faqs = () => {
-  return (
-    <div>Faqs</div>
-  )
-}
+  return <div className="mt-24 max-w-[1240px] m-auto">Faqs</div>;
+};
 
-export default Faqs
+export default Faqs;
