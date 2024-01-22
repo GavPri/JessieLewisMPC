@@ -17,7 +17,7 @@ const Faqs = () => {
         style={divStyle}
       ></div>
       {/* text */}
-      <div className="w-full text-center">
+      <div className="md:w-1/2 w-full text-center md:text-left">
         <h1 className="font-poppins font-extrabold text-4xl text-lightest mb-2">
           Frequently Asked Questions
         </h1>
