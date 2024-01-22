@@ -17,7 +17,6 @@ const Faqs = () => {
         <h1 className="font-poppins font-extrabold text-2xl md:text-4xl text-darkest mb-2">
           Frequently Asked Questions
         </h1>
-        <p className="text-dark">Questions you may have about our services</p>
         <div className="h-60vh">
           <FaqsAccordion />
         </div>
