@@ -1,5 +1,6 @@
 import React from "react";
 import faqs from "../../images/faqs.jpeg";
+import FaqsAccordion from "./FaqsAccordion";
 
 const Faqs = () => {
   const divStyle = {
@@ -17,6 +18,7 @@ const Faqs = () => {
         style={divStyle}
       ></div>
       {/* text */}
+
       <div className="md:w-1/2 w-full text-center md:text-left">
         <h1 className="font-poppins font-extrabold text-4xl text-lightest mb-2">
           Frequently Asked Questions
