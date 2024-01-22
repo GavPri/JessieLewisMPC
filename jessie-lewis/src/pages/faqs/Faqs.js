@@ -18,12 +18,12 @@ const Faqs = () => {
         style={divStyle}
       ></div>
       {/* text */}
-
-      <div className="md:w-1/2 w-full text-center md:text-left">
+      <div className="md:w-1/2 w-full text-center md:text-left md:flex md:flex-col">
         <h1 className="font-poppins font-extrabold text-4xl text-lightest mb-2">
           Frequently Asked Questions
         </h1>
         <p className="text-light">Questions you may have about our services</p>
+        <FaqsAccordion />
       </div>
     </div>
   );
