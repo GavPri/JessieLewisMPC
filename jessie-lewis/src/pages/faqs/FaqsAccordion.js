@@ -3,20 +3,23 @@ import { AiOutlinePlus } from "react-icons/ai";
 import faqsData from "../../data/faq-data/FaqsData";
 
 const FaqsAccordion = () => {
-  const [openAccordion, setOpenAccordion] = useState(false);
+  const [openAccordion, setOpenAccordion] = useState(-1);
 
-  const handleAccordion = () => {
-    setOpenAccordion(!openAccordion);
+  const handleAccordion = (index) => {
+    setOpenAccordion(openAccordion === index ? -1 : index);
   };
 
   return (
     <div className="w-full h-fit mt-4">
       {faqsData.map((faq, index) => (
         <>
-          <div key={index} className="w-10/12 h-fit rounded-md bg-lightest text-darkest py-4 px-6 hover:cursor-pointer mb-4">
+          <div
+            key={index}
+            className="w-10/12 h-fit rounded-md bg-lightest text-darkest py-4 px-6 hover:cursor-pointer mb-4"
+          >
             <div
               className="flex justify-between items-center relative"
-              onClick={handleAccordion}
+              onClick={() => handleAccordion(index)}
             >
               <p>{faq.question}</p>
               <p
@@ -32,12 +35,12 @@ const FaqsAccordion = () => {
             {/* Answer Div */}
             <div
               className={`overflow-hidden transition-all duration-500 ease-in-out ${
-                openAccordion ? "max-h-96 mt-2" : "max-h-0"
+                openAccordion === index ? "max-h-96 mt-2" : "max-h-0"
               }`}
             >
               <p
                 className={`font-poppins transition-all duration-500 ${
-                  openAccordion ? "opacity-100" : "opacity-0"
+                  openAccordion === index ? "opacity-100" : "opacity-0"
                 }`}
               >
                 {faq.answer}
