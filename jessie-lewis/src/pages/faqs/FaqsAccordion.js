@@ -12,7 +12,7 @@ const FaqsAccordion = () => {
     <div className="w-full h-fit mt-4">
       <div className="w-10/12 h-fit rounded-md bg-lightest text-darkest py-4 px-6 hover:cursor-pointer mb-4">
         <div
-          className="flex justify-between items-center mb-4"
+          className="flex justify-between items-center relative"
           onClick={handleAccordion}
         >
           <p>Question One</p>
@@ -27,8 +27,16 @@ const FaqsAccordion = () => {
           </p>
         </div>
         {/* Answer Div */}
-        <div>
-          <p>
+        <div
+          className={`overflow-hidden transition-all duration-500 ease-in-out ${
+            openAccordion ? "max-h-96 mt-2" : "max-h-0"
+          }`}
+        >
+          <p
+            className={`font-poppins transition-all duration-500 ${
+              openAccordion ? "opacity-100" : "opacity-0"
+            }`}
+          >
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Non
             consequuntur autem ab doloremque obcaecati ducimus! Sed expedita
             error deserunt nesciunt soluta ducimus, iure eveniet libero
