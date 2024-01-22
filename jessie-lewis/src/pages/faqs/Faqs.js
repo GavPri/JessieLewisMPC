@@ -10,9 +10,10 @@ const Faqs = () => {
   };
 
   return (
-    <div className="mt-24 max-w-[1240px] m-auto bg-lightest">
+    <div className="mt-24 max-w-[1240px] m-auto bg-lightest h-screen">
       {/* image container */}
-
+      <div className="hidden md:flex md:w-1/3 md:h-full" style={divStyle}></div>
+      {/* text */}
       <div className="w-full text-center">
         <h1 className="font-poppins font-extrabold text-4xl text-darkest mb-2">
           Frequently Asked Questions
