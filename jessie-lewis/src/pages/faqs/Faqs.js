@@ -11,10 +11,10 @@ const Faqs = () => {
   };
 
   return (
-    <div className="mt-24 max-w-[1240px] m-auto bg-darkest h-screen p-6 md:flex md:justify-around rounded-md">
+    <div className="mt-24 max-w-[1240px] m-auto bg-darkest h-fit p-6 md:flex md:justify-around rounded-md">
       {/* image container */}
       <div
-        className="hidden md:flex md:w-5/12 md:h-full md:rounded-md"
+        className="hidden md:flex md:w-5/12 md:h-screen md:rounded-md"
         style={divStyle}
       ></div>
       {/* text */}
