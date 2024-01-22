@@ -27,3 +27,5 @@ const faqsData = [
       "The evaluation of mental skills training extends beyond mere performance outcomes. While performance is a crucial aspect, progress can be measured through regular self-check-ins to assess adherence to our process goals. Additionally, feedback from teammates, coaches, and the broader team offers insights into how well we are managing our emotions and stress levels. A top performer cannot be the best on their own; it requires a strong support system. Having a reliable support system ensures individuals have a foundation to lean on and remain accountable for their ongoing growth and success.",
   },
 ];
+
+export default faqsData;
