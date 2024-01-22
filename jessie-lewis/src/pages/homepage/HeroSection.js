@@ -22,8 +22,8 @@ const HeroSection = () => {
           Prioritize your mind, body, and craft.
         </h2>
         <p className="p-4 font-poppins text-lightest text-xl md:text-2xl font-bold">
-          Peak performance is a mindset. Let us guide you through proven
-          techniques to optimize your cognitive abilities and achieve your goals
+          Let us guide you through proven mental skills techniques to optimize
+          your performance and achieve your goals.
         </p>
         <div className="p-4 w-full flex items-start justify-start ">
           <Button
