@@ -1,13 +1,28 @@
-import React from "react";
+import React, { useState } from "react";
 import { AiOutlinePlus } from "react-icons/ai";
 
 const FaqsAccordion = () => {
+  const [openAccordion, setOpenAccordion] = useState(false);
+
+  const handleAccordion = () => {
+    setOpenAccordion(!openAccordion);
+  };
+
   return (
     <div className="w-full h-fit mt-4">
       <div className="w-10/12 h-fit rounded-md bg-lightest text-darkest py-4 px-6 hover:cursor-pointer mb-4">
-        <div className="flex justify-between items-center mb-4">
+        <div
+          className="flex justify-between items-center mb-4"
+          onClick={handleAccordion}
+        >
           <p>Question One</p>
-          <p>
+          <p
+            className={
+              openAccordion
+                ? "rotate-45 transition-all duration-300 ease-in-out"
+                : "transition-all duration-300 ease-in-out"
+            }
+          >
             <AiOutlinePlus size={20} />
           </p>
         </div>
