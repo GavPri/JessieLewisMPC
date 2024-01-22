@@ -24,12 +24,25 @@ const AboutMeIntro = () => {
             About Me
           </h3>
           <p className="max-w-readable mb-2 font-poppins text-light">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis
-            reiciendis debitis numquam veniam amet perspiciatis provident nemo
-            perferendis totam illo itaque fugit, architecto expedita facilis
-            recusandae doloremque cupiditate aspernatur? Mollitia esse
-            reprehenderit distinctio sed impedit, eum eaque dolorum nostrum
-            voluptatum!
+            Jessie Lewis has fulfilled all mentorship hours and met the
+            necessary requirements for the Certified Mental Performance
+            Consultant certification. Currently, she is in the process of
+            preparing for the certification exam. Jessie holds a master's degree
+            in clinical psychology from California State University, Northridge,
+            where she also completed her practicum hours as part of the
+            certification process. She earned a bachelor's degree in psychology
+            from the University of California, Berkeley, where she gained her
+            initial experience in the field by teaching the first student-led
+            sport psychology course at UC Berkeley. Her role as a mental
+            performance coach entails providing individualized client-centered
+            sessions, as well as team sessions, aimed at enhancing mental skills
+            for optimal performance and overall well-being. Her philosophy of
+            practice revolves around the principles of mindfulness,
+            self-awareness, and the cultivation of self-confidence. By
+            instilling these qualities, she aims to empower athletes to
+            consistently deliver their best performances while embracing the
+            present moment. Her goal is to collaborate with clients to
+            prioritize their mind, body, and craft.
           </p>
         </div>
         <div className="md:flex md:w-full md:justify-between md:items-start p-6 order-last">
