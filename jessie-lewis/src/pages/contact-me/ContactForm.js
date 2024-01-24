@@ -1,9 +1,16 @@
 import React from "react";
+import { AiOutlineMail } from "react-icons/ai";
 
 const ContactForm = () => {
   return (
     <div className="max-w-[800px] m-auto mt-24">
-      <form className="max-w-[80%] m-auto p-6">
+      <h1 className="text-4xl text-darkest px-6 font-extrabold flex items-center justify-start">
+        Contact Me
+        <span className="ml-4">
+          <AiOutlineMail />
+        </span>
+      </h1>
+      <form className="m-auto p-6">
         <div className="max-w-full mb-4">
           <label htmlFor="name" className="hidden">
             Your full name:
