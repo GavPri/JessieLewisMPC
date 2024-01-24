@@ -2,7 +2,7 @@ import React from "react";
 
 const ContactForm = () => {
   return (
-    <div className="max-w-[800px] glass m-auto mt-24">
+    <div className="max-w-[800px] m-auto mt-24">
       <form className="max-w-[80%] m-auto p-6">
         <div className="max-w-full mb-4">
           <label htmlFor="name" className="hidden">
@@ -59,7 +59,7 @@ const ContactForm = () => {
         </div>
         <button
           type="submit"
-          className="py-2 px-4 bg-transparent border-2 border-dark rounded-md text-neutral font-bold font-poppins hover:text-lightest hover:bg-neutral hover:border-light transition-all duration-500"
+          className="py-2 px-4 rounded-md font-bold font-poppins hover:button-hover transition-all duration-500 button active:button-drop"
         >
           Submit
         </button>
