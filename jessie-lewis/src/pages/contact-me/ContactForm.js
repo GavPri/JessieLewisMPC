@@ -2,7 +2,7 @@ import React from "react";
 
 const ContactForm = () => {
   return (
-    <div className="max-w-[800px] bg-darkest m-auto mt-24">
+    <div className="max-w-[800px] glass m-auto mt-24">
       <form className="max-w-[80%] m-auto p-6">
         <div className="max-w-full mb-4">
           <label htmlFor="name" className="hidden">
