@@ -3,7 +3,7 @@ import { AiOutlineMail } from "react-icons/ai";
 
 const ContactForm = () => {
   return (
-    <div className="max-w-[800px] m-auto mt-24">
+    <div className="max-w-[800px] m-auto mt-24 glass py-4 rounded-md">
       <h1 className="text-4xl text-darkest px-6 font-extrabold flex items-center justify-start">
         Contact Me
         <span className="ml-4">
