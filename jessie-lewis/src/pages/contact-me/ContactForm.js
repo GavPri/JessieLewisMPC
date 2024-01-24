@@ -57,7 +57,7 @@ const ContactForm = () => {
             cols={20}
           ></textarea>
         </div>
-        
+        <button type="submit" className="py-2 px-4 bg-transparent border-2 border-neutral rounded-md text-neutral font-poppins">Submit</button>
       </form>
     </div>
   );
