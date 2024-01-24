@@ -59,9 +59,9 @@ const ContactForm = () => {
         </div>
         <button
           type="submit"
-          className="py-2 px-4 rounded-md font-bold font-poppins hover:button-hover transition-all duration-500 button active:button-drop"
+          className="py-2 px-4 rounded-md font-poppins hover:button-hover transition-all duration-500 button active:button-drop"
         >
-          Submit
+          <span>Submit</span>
         </button>
       </form>
     </div>
