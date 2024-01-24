@@ -57,7 +57,12 @@ const ContactForm = () => {
             cols={20}
           ></textarea>
         </div>
-        <button type="submit" className="py-2 px-4 bg-transparent border-2 border-neutral rounded-md text-neutral font-poppins">Submit</button>
+        <button
+          type="submit"
+          className="py-2 px-4 bg-transparent border-2 border-dark rounded-md text-neutral font-bold font-poppins hover:text-lightest hover:bg-neutral hover:border-light transition-all duration-500"
+        >
+          Submit
+        </button>
       </form>
     </div>
   );

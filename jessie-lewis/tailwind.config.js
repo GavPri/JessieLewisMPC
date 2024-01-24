@@ -17,6 +17,9 @@ module.exports = {
       maxWidth: {
         readable: "65ch",
       },
+      boxShadow: {
+        reg: "0 5px 0 -15px #545454",
+      },
     },
   },
   plugins: [],
