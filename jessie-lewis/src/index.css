@@ -38,4 +38,9 @@ button {
     border-radius: 20px;
     border: 2px, solid rgba();
   }
+
+  .button-drop {
+    box-shadow: none;
+    transform: translateY(5px);
+  }
 }
