@@ -31,7 +31,7 @@ const ContactForm = () => {
           <select
             name="services"
             value="services"
-            className="py-2 px-4 rounded-md font-poppins text-darkest min-w-full"
+            className="py-2 px-4 rounded-md font-poppins text-darkest min-w-1/2"
           >
             <option value="">Please select a topic</option>
             <option value="1-1 coaching">1-1 coaching</option>
