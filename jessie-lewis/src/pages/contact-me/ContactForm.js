@@ -26,10 +26,10 @@ const ContactForm = () => {
   };
   // ----- End of email.js
   const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    services: "",
-    question: "",
+    user_name: "",
+    user_email: "",
+    service: "",
+    message: "",
   });
 
   const handleInputChange = (event) => {
