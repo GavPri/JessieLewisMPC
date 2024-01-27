@@ -3,6 +3,7 @@ import HeroSection from "./HeroSection";
 import AboutMeIntro from "./AboutMeIntro";
 import ServicesIntro from "./ServicesIntro";
 import ContactMeIntro from "./ContactMeIntro";
+import ContactForm from "../contact-me/ContactForm";
 
 const HomePage = () => {
   return (
@@ -15,9 +16,6 @@ const HomePage = () => {
       </div>
       <div>
         <AboutMeIntro />
-      </div>
-      <div>
-        <ContactMeIntro />
       </div>
     </div>
   );

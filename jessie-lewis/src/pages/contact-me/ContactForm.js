@@ -43,7 +43,7 @@ const ContactForm = () => {
             type="text"
             placeholder="Your full name"
             className="py-2 px-4 rounded-md font-poppins text-darkest min-w-full"
-            name="name"
+            name="user_name"
             value={formData.name}
             onChange={handleInputChange}
           />
@@ -55,7 +55,7 @@ const ContactForm = () => {
             type="text"
             placeholder="Email address"
             className="py-2 px-4 rounded-md font-poppins text-darkest min-w-full"
-            name="email"
+            name="user_email"
             value={formData.email}
             onChange={handleInputChange}
           />
@@ -64,7 +64,7 @@ const ContactForm = () => {
           <label htmlFor="services">Service Enquiry:</label>
           <select
             required
-            name="services"
+            name="service"
             value={formData.services}
             className="py-2 px-4 rounded-md font-poppins text-darkest min-w-1/2"
             onChange={handleInputChange}
@@ -80,7 +80,7 @@ const ContactForm = () => {
           <label htmlFor="question">Your Question:</label>
           <textarea
             required
-            name="question"
+            name="message"
             className="py-2 px-4 rounded-md font-poppins text-darkest min-w-full"
             placeholder="Your question..."
             minLength={16}
