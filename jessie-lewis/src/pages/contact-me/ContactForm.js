@@ -37,7 +37,7 @@ const ContactForm = () => {
       </h1>
       <form className="m-auto p-6" onSubmit={handleSubmit}>
         <div className="max-w-full mb-4">
-          <label htmlFor="name">Your full name:</label>
+          <label htmlFor="user_name">Your full name:</label>
           <input
             required
             type="text"
@@ -49,7 +49,7 @@ const ContactForm = () => {
           />
         </div>
         <div className="max-w-full mb-4">
-          <label htmlFor="email">Your email:</label>
+          <label htmlFor="user_email">Your email:</label>
           <input
             required
             type="text"
@@ -61,7 +61,7 @@ const ContactForm = () => {
           />
         </div>
         <div className="max-w-full mb-4">
-          <label htmlFor="services">Service Enquiry:</label>
+          <label htmlFor="service">Service Enquiry:</label>
           <select
             required
             name="service"
@@ -77,7 +77,7 @@ const ContactForm = () => {
           </select>
         </div>
         <div className="max-w-full mb-4">
-          <label htmlFor="question">Your Question:</label>
+          <label htmlFor="message">Your Question:</label>
           <textarea
             required
             name="message"
