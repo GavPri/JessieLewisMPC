@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { AiOutlineMail } from "react-icons/ai";
 
+
 const ContactForm = () => {
   const [formData, setFormData] = useState({
     name: "",
@@ -17,6 +18,12 @@ const ContactForm = () => {
     }));
   };
 
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    console.log("Form submitted:", formData);
+    window.location.href = "/";
+  };
+
   return (
     <div className="max-w-[800px] m-auto mt-24 glass py-4 rounded-md">
       <h1 className="text-4xl text-darkest px-6 font-extrabold flex items-center justify-start">
@@ -25,7 +32,7 @@ const ContactForm = () => {
           <AiOutlineMail />
         </span>
       </h1>
-      <form className="m-auto p-6">
+      <form className="m-auto p-6" onSubmit={handleSubmit}>
         <div className="max-w-full mb-4">
           <label htmlFor="name">Your full name:</label>
           <input
@@ -84,6 +91,7 @@ const ContactForm = () => {
         <button
           type="submit"
           className="py-2 px-4 rounded-md font-poppins hover:button-hover transition-all duration-500 button active:button-drop"
+          onSubmit={handleSubmit}
         >
           <span>Submit</span>
         </button>
