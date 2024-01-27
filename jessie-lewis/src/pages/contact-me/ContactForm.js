@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { AiOutlineMail } from "react-icons/ai";
 
-
 const ContactForm = () => {
   const [formData, setFormData] = useState({
     name: "",
@@ -9,6 +8,10 @@ const ContactForm = () => {
     services: "",
     question: "",
   });
+
+  const [showSuccessAlert, setShowSuccessAlert] = useState(false);
+  const [showErrorAlert, setShowErrorAlert] = useState(false);
+  const [errorMessage, setErrorMessage] = useState("");
 
   const handleInputChange = (event) => {
     const { name, value } = event.target;
