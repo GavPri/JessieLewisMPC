@@ -24,6 +24,17 @@ const ContactForm = () => {
   const handleSubmit = (event) => {
     event.preventDefault();
     console.log("Form submitted:", formData);
+    // Perform form validation or submission logic
+    if (formData.name && formData.email && formData.services) {
+      // Form submitted successfully
+      setShowSuccessAlert(true);
+      setShowErrorAlert(false);
+      setErrorMessage("");
+    } else {
+      // Display error message
+      setShowSuccessAlert(false);
+      setShowErrorAlert(true);
+      setErrorMessage("Please fill in all required fields.");
     window.location.href = "/";
   };
 
