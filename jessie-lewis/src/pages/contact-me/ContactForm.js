@@ -9,10 +9,6 @@ const ContactForm = () => {
     question: "",
   });
 
-  const [showSuccessAlert, setShowSuccessAlert] = useState(false);
-  const [showErrorAlert, setShowErrorAlert] = useState(false);
-  const [errorMessage, setErrorMessage] = useState("");
-
   const handleInputChange = (event) => {
     const { name, value } = event.target;
     setFormData((prevFormData) => ({
