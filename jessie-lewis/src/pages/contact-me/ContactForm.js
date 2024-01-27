@@ -54,7 +54,7 @@ const ContactForm = () => {
           <AiOutlineMail />
         </span>
       </h1>
-      <form className="m-auto p-6" onSubmit={handleSubmit}>
+      <form className="m-auto p-6" onSubmit={sendEmail}>
         <div className="max-w-full mb-4">
           <label htmlFor="user_name">Your full name:</label>
           <input
