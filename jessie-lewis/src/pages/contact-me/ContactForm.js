@@ -1,5 +1,6 @@
 import React, { useState, useRef } from "react";
 import { AiOutlineMail } from "react-icons/ai";
+import emailjs from "@emailjs/browser";
 
 const ContactForm = () => {
   // Email.js
@@ -10,10 +11,10 @@ const ContactForm = () => {
 
     emailjs
       .sendForm(
-        "service_plsodf9",
-        "service_plsodf9",
+        "service_trpldyl",
+        "template_l5shn9r",
         form.current,
-        "m4KfLYEtEDJUnLjxF"
+        "-3M2v6NWT1JwGRka6"
       )
       .then(
         (result) => {
@@ -54,7 +55,7 @@ const ContactForm = () => {
           <AiOutlineMail />
         </span>
       </h1>
-      <form className="m-auto p-6" onSubmit={sendEmail}>
+      <form className="m-auto p-6" onSubmit={sendEmail} ref={form}>
         <div className="max-w-full mb-4">
           <label htmlFor="user_name">Your full name:</label>
           <input
