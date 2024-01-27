@@ -1,7 +1,22 @@
-import React from "react";
+import React, { useState } from "react";
 import { AiOutlineMail } from "react-icons/ai";
 
 const ContactForm = () => {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    services: "",
+    question: "",
+  });
+
+  const handleInputChange = (event) => {
+    const { name, value } = event.target;
+    setFormData((prevFormData) => ({
+      ...prevFormData,
+      [name]: value,
+    }));
+  };
+
   return (
     <div className="max-w-[800px] m-auto mt-24 glass py-4 rounded-md">
       <h1 className="text-4xl text-darkest px-6 font-extrabold flex items-center justify-start">
@@ -12,36 +27,37 @@ const ContactForm = () => {
       </h1>
       <form className="m-auto p-6">
         <div className="max-w-full mb-4">
-          <label htmlFor="name" className="hidden">
-            Your full name:
-          </label>
+          <label htmlFor="name">Your full name:</label>
           <input
             required
             type="text"
             placeholder="Your full name"
             className="py-2 px-4 rounded-md font-poppins text-darkest min-w-full"
+            name="name"
+            value={formData.name}
+            onChange={handleInputChange}
           />
         </div>
         <div className="max-w-full mb-4">
-          <label htmlFor="email" className="hidden">
-            Your email
-          </label>
+          <label htmlFor="email">Your email:</label>
           <input
             required
             type="text"
             placeholder="Email address"
             className="py-2 px-4 rounded-md font-poppins text-darkest min-w-full"
+            name="email"
+            value={formData.email}
+            onChange={handleInputChange}
           />
         </div>
         <div className="max-w-full mb-4">
-          <label htmlFor="email" className="hidden">
-            Service Enquiry
-          </label>
+          <label htmlFor="services">Service Enquiry:</label>
           <select
             required
             name="services"
-            value="services"
+            value={formData.services}
             className="py-2 px-4 rounded-md font-poppins text-darkest min-w-1/2"
+            onChange={handleInputChange}
           >
             <option value="">Please select a topic</option>
             <option value="1-1 coaching">1-1 coaching</option>
@@ -51,17 +67,18 @@ const ContactForm = () => {
           </select>
         </div>
         <div className="max-w-full mb-4">
-          <label htmlFor="email" className="hidden">
-            Service Enquiry
-          </label>
+          <label htmlFor="question">Your Question:</label>
           <textarea
-            on
+            required
+            name="question"
             className="py-2 px-4 rounded-md font-poppins text-darkest min-w-full"
             placeholder="Your question..."
             minLength={16}
             wrap="hard"
             rows={7}
             cols={20}
+            value={formData.question}
+            onChange={handleInputChange}
           ></textarea>
         </div>
         <button

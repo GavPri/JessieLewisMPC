@@ -30,6 +30,9 @@ p,
 button {
   letter-spacing: 2px;
 }
+label {
+  display: none;
+}
 @layer utilities {
   .glass {
     background: linear-gradient
