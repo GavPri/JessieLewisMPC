@@ -8,16 +8,16 @@ const TestimonialSlider = () => {
 
   // ---- Next slide function -----
   const nextSlide = () => {
-    setCurrent((prevCurrent) => {
-      prevCurrent === testimonialData.length - 1 ? 0 : prevCurrent + 1;
-    });
+    setCurrent((prevCurrent) =>
+      prevCurrent === testimonialData.length - 1 ? 0 : prevCurrent + 1
+    );
   };
 
   // ----- Previous slide function -----
-  const previousSLide = () => {
-    setCurrent((prevCurrent) => {
-      prevCurrent === 0 ? testimonialData.length - 1 : prevCurrent - 1;
-    });
+  const previousSlide = () => {
+    setCurrent((prevCurrent) =>
+      prevCurrent === 0 ? testimonialData.length - 1 : prevCurrent - 1
+    );
   };
   return (
     <div className="flex m-auto max-w-[1240px] relative">
@@ -27,7 +27,7 @@ const TestimonialSlider = () => {
           <div
             index={index}
             className={`${
-              current === index ? "block" : "hidden"
+              index === current ? "block" : "hidden"
             } transition-opacity duration-500`}
           >
             <p>{t.name}</p>
@@ -39,7 +39,8 @@ const TestimonialSlider = () => {
       {/* ----- End Of Carousel Content Div ----- */}
       {/* ----- Previous & Next Buttons ----- */}
       <div>
-        <FaArrowAltCircleRight /> <FaArrowAltCircleLeft />
+        <FaArrowAltCircleRight onClick={nextSlide} />{" "}
+        <FaArrowAltCircleLeft onClick={previousSlide} />
       </div>
       {/* ----- End of previous & next buttons ----- */}
       {/* ----- Slider Dots ----- */}
