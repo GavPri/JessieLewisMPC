@@ -1,8 +1,24 @@
-import React from "react";
+import React, { useState } from "react";
 import testimonialData from "../../data/testimonial-data/TestimonialData";
 import { FaArrowAltCircleLeft, FaArrowAltCircleRight } from "react-icons/fa";
 
 const TestimonialSlider = () => {
+  // ----- Use state to set the current slide -----
+  const [current, setCurrent] = useState(0);
+
+  // ---- Next slide function -----
+  const nextSlide = () => {
+    setCurrent((prevCurrent) => {
+      prevCurrent === testimonialData.length - 1 ? 0 : prevCurrent + 1;
+    });
+  };
+
+  // ----- Previous slide function -----
+  const previousSLide = () => {
+    setCurrent((prevCurrent) => {
+      prevCurrent === 0 ? testimonialData.length - 1 : prevCurrent - 1;
+    });
+  };
   return (
     <div className="flex m-auto max-w-[1240px]">
       {/* ----- Carousel Content Div ------ */}
