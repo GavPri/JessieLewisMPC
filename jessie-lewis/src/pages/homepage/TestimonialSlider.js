@@ -1,10 +1,11 @@
 import React from "react";
 import testimonialData from "../../data/testimonial-data/TestimonialData";
+import { FaArrowAltCircleLeft, FaArrowAltCircleRight } from "react-icons/fa";
 
 const TestimonialSlider = () => {
   return (
-    <div className="m-auto max-w-[1240px]">
-      Testimonials
+    <div className="flex m-auto max-w-[1240px]">
+      {/* ----- Carousel Content Div ------ */}
       <div>
         {testimonialData.map((t, index) => (
           <>
@@ -14,6 +15,19 @@ const TestimonialSlider = () => {
           </>
         ))}
       </div>
+      {/* ----- End Of Carousel Content Div ----- */}
+      {/* ----- Previous & Next Buttons ----- */}
+      <div>
+        <FaArrowAltCircleRight /> <FaArrowAltCircleLeft />
+      </div>
+      {/* ----- End of previous & next buttons ----- */}
+      {/* ----- Slider Dots ----- */}
+      <div>
+        {testimonialData.map((t, index) => (
+          <div className="rounded-full w-5 h-5 bg-darkest"></div>
+        ))}
+      </div>
+      {/* ----- End of Slider Dots ----- */}
     </div>
   );
 };
