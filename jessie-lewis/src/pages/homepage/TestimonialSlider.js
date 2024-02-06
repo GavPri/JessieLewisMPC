@@ -20,15 +20,15 @@ const TestimonialSlider = () => {
     );
   };
   return (
-    <div className="flex m-auto max-w-[1240px] relative">
+    <div className="flex m-auto max-w-[1240px] relative justify-center items-center">
       {/* ----- Carousel Content Div ------ */}
-      <div className="flex items-center">
+      <div className="flex items-center min-h-64 justify-center">
         {testimonialData.map((t, index) => (
           <div
             index={index}
             className={`${
               index === current ? "block" : "hidden"
-            } transition-opacity duration-500`}
+            } transition-opacity duration-500 max-w-readable m-auto`}
           >
             <p>{t.name}</p>
             <p>{t.role}</p>
