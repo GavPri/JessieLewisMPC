@@ -47,9 +47,11 @@ const TestimonialSlider = () => {
       <div className="absolute bottom-4 flex gap-4 left-1/2 transform -translate-x-1/2">
         {testimonialData.map((t, index) => (
           <div
+            key={index}
             className={` rounded-full h-5 w-5 ${
               current === index ? "bg-darkest" : "bg-neutral"
             }`}
+            onClick={() => setCurrent(index)}
           ></div>
         ))}
       </div>
