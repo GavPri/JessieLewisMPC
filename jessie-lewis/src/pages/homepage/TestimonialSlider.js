@@ -38,9 +38,9 @@ const TestimonialSlider = () => {
       </div>
       {/* ----- End Of Carousel Content Div ----- */}
       {/* ----- Previous & Next Buttons ----- */}
-      <div>
-        <FaArrowAltCircleRight onClick={nextSlide} />{" "}
-        <FaArrowAltCircleLeft onClick={previousSlide} />
+      <div className="absolute top-1/2 transform -translate-y-1/2 flex w-full justify-between flex-row-reverse">
+        <FaArrowAltCircleRight onClick={nextSlide} size={20}/>
+        <FaArrowAltCircleLeft onClick={previousSlide} size={20}/>
       </div>
       {/* ----- End of previous & next buttons ----- */}
       {/* ----- Slider Dots ----- */}
