@@ -39,14 +39,18 @@ const TestimonialSlider = () => {
       {/* ----- End Of Carousel Content Div ----- */}
       {/* ----- Previous & Next Buttons ----- */}
       <div className="absolute top-1/2 transform -translate-y-1/2 flex w-full justify-between flex-row-reverse">
-        <FaArrowAltCircleRight onClick={nextSlide} size={20}/>
-        <FaArrowAltCircleLeft onClick={previousSlide} size={20}/>
+        <FaArrowAltCircleRight onClick={nextSlide} size={20} />
+        <FaArrowAltCircleLeft onClick={previousSlide} size={20} />
       </div>
       {/* ----- End of previous & next buttons ----- */}
       {/* ----- Slider Dots ----- */}
-      <div>
+      <div className="absolute bottom-4 flex gap-4 left-1/2 transform -translate-x-1/2">
         {testimonialData.map((t, index) => (
-          <div className="rounded-full w-5 h-5 bg-darkest"></div>
+          <div
+            className={` rounded-full h-5 w-5 ${
+              current === index ? "bg-darkest" : "bg-neutral"
+            }`}
+          ></div>
         ))}
       </div>
       {/* ----- End of Slider Dots ----- */}
