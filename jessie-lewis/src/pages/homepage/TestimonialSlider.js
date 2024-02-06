@@ -20,27 +20,27 @@ const TestimonialSlider = () => {
     );
   };
   return (
-    <div className="flex m-auto max-w-[1240px] relative justify-center items-center">
+    <div className="flex m-auto max-w-[1240px] relative justify-center items-center button">
       {/* ----- Carousel Content Div ------ */}
-      <div className="flex items-center min-h-64 justify-center">
+      <div className="flex items-center min-h-[75vh] ">
         {testimonialData.map((t, index) => (
           <div
             index={index}
             className={`${
               index === current ? "block" : "hidden"
-            } transition-opacity duration-500 max-w-readable m-auto`}
+            } transition-opacity duration-500 max-w-readable m-auto p-10`}
           >
-            <p>{t.name}</p>
-            <p>{t.role}</p>
-            <p> {t.testimonial} </p>
+            <p className="text-4xl font-extrabold pb-4">{t.name}</p>
+            <p className="capitalize font-semibold pb-2">{t.role}</p>
+            <p className="text-xl"> {t.testimonial} </p>
           </div>
         ))}
       </div>
       {/* ----- End Of Carousel Content Div ----- */}
       {/* ----- Previous & Next Buttons ----- */}
-      <div className="absolute top-1/2 transform -translate-y-1/2 flex w-full justify-between flex-row-reverse">
-        <FaArrowAltCircleRight onClick={nextSlide} size={20} />
-        <FaArrowAltCircleLeft onClick={previousSlide} size={20} />
+      <div className="absolute top-1/2 transform -translate-y-1/2 flex w-full justify-between flex-row-reverse ">
+        <FaArrowAltCircleRight onClick={nextSlide} size={30}/>
+        <FaArrowAltCircleLeft onClick={previousSlide} size={30} />
       </div>
       {/* ----- End of previous & next buttons ----- */}
       {/* ----- Slider Dots ----- */}
