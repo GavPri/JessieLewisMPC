@@ -2,8 +2,6 @@ import React from "react";
 import HeroSection from "./HeroSection";
 import AboutMeIntro from "./AboutMeIntro";
 import ServicesIntro from "./ServicesIntro";
-import ContactMeIntro from "./ContactMeIntro";
-import ContactForm from "../contact-me/ContactForm";
 import TestimonialSlider from "./TestimonialSlider";
 
 const HomePage = () => {
