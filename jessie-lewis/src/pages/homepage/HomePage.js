@@ -4,6 +4,7 @@ import AboutMeIntro from "./AboutMeIntro";
 import ServicesIntro from "./ServicesIntro";
 import ContactMeIntro from "./ContactMeIntro";
 import ContactForm from "../contact-me/ContactForm";
+import TestimonialSlider from "./TestimonialSlider";
 
 const HomePage = () => {
   return (
@@ -16,6 +17,9 @@ const HomePage = () => {
       </div>
       <div>
         <AboutMeIntro />
+      </div>
+      <div>
+        <TestimonialSlider />
       </div>
     </div>
   );
