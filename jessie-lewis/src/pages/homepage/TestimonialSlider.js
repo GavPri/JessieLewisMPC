@@ -20,26 +20,29 @@ const TestimonialSlider = () => {
     );
   };
   return (
-    <div className="flex m-auto max-w-[1240px] relative justify-center items-center button">
+    <div className="relative flex m-auto max-w-[1240px] justify-center items-center  h-[50vh] mb-4 group">
       {/* ----- Carousel Content Div ------ */}
-      <div className="flex items-center min-h-[75vh] ">
-        {testimonialData.map((t, index) => (
-          <div
-            index={index}
-            className={`${
-              index === current ? "block" : "hidden"
-            } transition-opacity duration-500 max-w-readable m-auto p-10`}
-          >
-            <p className="text-4xl font-extrabold pb-4">{t.name}</p>
-            <p className="capitalize font-semibold pb-2">{t.role}</p>
-            <p className="text-xl"> {t.testimonial} </p>
+      {testimonialData.map((t, idx) => (
+        <div
+          key={idx}
+          className={`text-center m-auto max-w-[80vw] absolute transition-all duration-500 ease-in-out flex justify-center items-center  w-full ${
+            current === idx
+              ? "opacity-100 transform translate-x-0"
+              : "opacity-0 transform -translate-x-20"
+          }`}
+        >
+          <div>
+            <p className="block max-w-readable text-2xl">{t.testimonial}</p>
+            <p className="font-bold mt-4">
+              {t.name}, <span className="ml-2 font-thin">{t.role}</span>
+            </p>
           </div>
-        ))}
-      </div>
+        </div>
+      ))}
       {/* ----- End Of Carousel Content Div ----- */}
       {/* ----- Previous & Next Buttons ----- */}
-      <div className="absolute top-1/2 transform -translate-y-1/2 flex w-full justify-between flex-row-reverse ">
-        <FaArrowAltCircleRight onClick={nextSlide} size={30}/>
+      <div className=" group-hover:opacity-100 opacity-0 transition-all duration-500 cursor-pointer absolute top-1/2 transform -translate-y-1/2 flex w-full justify-between flex-row-reverse ">
+        <FaArrowAltCircleRight onClick={nextSlide} size={30} />
         <FaArrowAltCircleLeft onClick={previousSlide} size={30} />
       </div>
       {/* ----- End of previous & next buttons ----- */}
@@ -48,7 +51,7 @@ const TestimonialSlider = () => {
         {testimonialData.map((t, index) => (
           <div
             key={index}
-            className={` rounded-full h-5 w-5 ${
+            className={`cursor-pointer rounded-full h-5 w-5 ${
               current === index ? "bg-darkest" : "bg-neutral"
             }`}
             onClick={() => setCurrent(index)}
