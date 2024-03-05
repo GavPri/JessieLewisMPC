@@ -31,7 +31,7 @@ const HeroSection = () => {
   return (
     <div
       style={divStyle}
-      className="relative group p-4 rounded-md min-w-screen max-w-[1240px] md:m-auto flex justify-between items-start min-h-[70vh]"
+      className="relative group p-4 rounded-md min-w-screen max-w-[1240px] md:m-auto justify-center items-start  min-h-[70vh]"
     >
       <TestimonialSlider
         current={current}

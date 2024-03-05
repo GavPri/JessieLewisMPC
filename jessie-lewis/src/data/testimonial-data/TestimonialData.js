@@ -14,7 +14,7 @@ const testimonialData = [
 
   {
     name: "Sophie Marengo",
-    role: "Women’s soccer players at Cal State Northridge",
+    role: "Women’s soccer player",
     testimonial:
       "Jessie is someone who made a significantly positive impact for our team! Jessie improved each individuals’ self-confidence on and off the field by using positive self-talk. In addition, she contributed positively towards our team helping each athletes’ performance anxiety using deep breathing strategies. Jessie is an individual who is very passionate on helping others become successful and is well-knowledged of improving one’s mental performance on and off the field.",
   },

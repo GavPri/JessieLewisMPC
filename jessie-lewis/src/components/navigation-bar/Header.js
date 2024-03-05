@@ -34,7 +34,7 @@ const Header = () => {
 
   return (
     <header
-      className={`z-10 ${headerColor} fixed top-0 w-full mb-4  left-0 right-0 mx-auto max-w-[1240px] min-w-[280px] h-24 flex justify-between items-center p-4 md:rounded-b-md`}
+      className={`z-20 ${headerColor} fixed top-0 w-full mb-4  left-0 right-0 mx-auto max-w-[1240px] min-w-[280px] h-24 flex justify-between items-center p-4 md:rounded-b-md`}
     >
       {/* Logo Div */}
       <Logo height={100} />

@@ -9,7 +9,7 @@ const TestimonialSlider = ({
   previousSlide,
 }) => {
   return (
-    <div className=" relative flex m-auto max-w-[1240px] justify-center items-center h-[50vh] mb-4 group bg-light z-10 text-light">
+    <div className=" relative flex m-auto max-w-[1240px] min-h-[500px] justify-center items-center h-[50vh] mb-4 group  z-10 text-light">
       {/* ----- Carousel Content Div ------ */}
       {testimonialData.map((t, idx) => (
         <div
@@ -20,8 +20,8 @@ const TestimonialSlider = ({
               : "opacity-0 transform -translate-x-20"
           }`}
         >
-          <div>
-            <p className="block max-w-readable text-2xl bg-light text-darkest rounded-md py-4 px-6">
+          <div className="max-h-40vh button py-4 px-6 rounded-md opacity-80">
+            <p className=" block max-w-readable md:text-2xl mt-4 text-lightest rounded-md opacity-100">
               {t.testimonial}
             </p>
             <p className="font-bold mt-4">
@@ -34,7 +34,7 @@ const TestimonialSlider = ({
       {/* ----- Previous & Next Buttons ----- */}
 
       {/* ----- Slider Dots ----- */}
-      <div className="absolute bottom-4 flex gap-4 left-1/2 transform -translate-x-1/2">
+      <div className="absolute bottom-0 flex gap-4 left-1/2 transform -translate-x-1/2">
         {testimonialData.map((t, index) => (
           <div
             key={index}
