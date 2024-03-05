@@ -2,30 +2,19 @@ import React, { useState } from "react";
 import testimonialData from "../../data/testimonial-data/TestimonialData";
 import { FaArrowAltCircleLeft, FaArrowAltCircleRight } from "react-icons/fa";
 
-const TestimonialSlider = () => {
-  // ----- Use state to set the current slide -----
-  const [current, setCurrent] = useState(0);
-
-  // ---- Next slide function -----
-  const nextSlide = () => {
-    setCurrent((prevCurrent) =>
-      prevCurrent === testimonialData.length - 1 ? 0 : prevCurrent + 1
-    );
-  };
-
-  // ----- Previous slide function -----
-  const previousSlide = () => {
-    setCurrent((prevCurrent) =>
-      prevCurrent === 0 ? testimonialData.length - 1 : prevCurrent - 1
-    );
-  };
+const TestimonialSlider = ({
+  current,
+  setCurrent,
+  nextSlide,
+  previousSlide,
+}) => {
   return (
-    <div className="relative flex m-auto max-w-[1240px] justify-center items-center  h-[50vh] mb-4 group">
+    <div className=" absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex m-auto max-w-[1240px] justify-center items-center  h-[50vh] mb-4 group bg-light">
       {/* ----- Carousel Content Div ------ */}
       {testimonialData.map((t, idx) => (
         <div
           key={idx}
-          className={`text-center m-auto max-w-[80vw] absolute transition-all duration-500 ease-in-out flex justify-center items-center  w-full ${
+          className={`text-center m-auto min-w-[80vw] absolute transition-all duration-500 ease-in-out flex justify-center items-center  w-full ${
             current === idx
               ? "opacity-100 transform translate-x-0"
               : "opacity-0 transform -translate-x-20"
@@ -41,7 +30,7 @@ const TestimonialSlider = () => {
       ))}
       {/* ----- End Of Carousel Content Div ----- */}
       {/* ----- Previous & Next Buttons ----- */}
-      <div className=" group-hover:opacity-100 opacity-0 transition-all duration-500 cursor-pointer absolute top-1/2 transform -translate-y-1/2 flex w-full justify-between flex-row-reverse ">
+      <div className=" opacity-0 transition-all duration-500 cursor-pointer absolute top-1/2 transform -translate-y-1/2 flex w-full justify-between flex-row-reverse ">
         <FaArrowAltCircleRight onClick={nextSlide} size={30} />
         <FaArrowAltCircleLeft onClick={previousSlide} size={30} />
       </div>
