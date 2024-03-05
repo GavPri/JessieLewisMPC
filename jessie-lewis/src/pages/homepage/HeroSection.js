@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import banner from "../../images/banner.jpeg";
 import TestimonialSlider from "./TestimonialSlider";
+import testimonialData from "../../data/testimonial-data/TestimonialData";
+import { FaArrowAltCircleLeft, FaArrowAltCircleRight } from "react-icons/fa";
 
 const HeroSection = () => {
   // ----- Use state to set the current slide -----
@@ -29,7 +31,7 @@ const HeroSection = () => {
   return (
     <div
       style={divStyle}
-      className="relative p-4 rounded-md min-w-screen md:max-w-[1240px] md:m-auto md:flex md:justify-between md:items-start min-h-[70vh]"
+      className="relative group p-4 rounded-md min-w-screen max-w-[1240px] md:m-auto flex justify-between items-start min-h-[70vh]"
     >
       <TestimonialSlider
         current={current}
@@ -37,6 +39,12 @@ const HeroSection = () => {
         nextSlide={nextSlide}
         previousSlide={previousSlide}
       />
+      <div className="bg-lightest z-10 rounded-full text-darkest absolute top-1/2 -translate-y-1/2 left-2 group-hover:opacity-100 opacity-0 transition-all duration-500 cursor-pointer flex items-center">
+        <FaArrowAltCircleLeft onClick={previousSlide} size={30} />
+      </div>
+      <div className="bg-lightest z-10 rounded-full text-darkest absolute top-1/2 -translate-y-1/2 right-2 group-hover:opacity-100 opacity-0 transition-all duration-500 cursor-pointer flex items-center">
+        <FaArrowAltCircleRight onClick={nextSlide} size={30} />
+      </div>
     </div>
   );
 };
