@@ -11,8 +11,11 @@ const AboutMe = () => {
   };
 
   return (
-    <div className="mt-24 max-w-[1240px] m-auto">
-      Get to know Jessie
+    <div className="mt-24 max-w-[1240px] m-auto text-center">
+      <h1 className="text-2xl font-bold bg-gradient-to-r from-darkest to-neutral text-transparent bg-clip-text uppercase">
+        Get to know Jessie
+      </h1>
+      
     </div>
   );
 };

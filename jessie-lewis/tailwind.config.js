@@ -9,6 +9,7 @@ module.exports = {
       lightest: "#f9f9f9",
       seafoam: "#78C0A8",
       cyanAccent: "#06b6d4",
+      transparent: "rgba(255, 255, 255, 0)",
     },
     extend: {
       fontFamily: {
