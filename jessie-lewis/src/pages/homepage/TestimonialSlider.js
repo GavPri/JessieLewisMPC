@@ -1,13 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import testimonialData from "../../data/testimonial-data/TestimonialData";
 import { FaArrowAltCircleLeft, FaArrowAltCircleRight } from "react-icons/fa";
 
 const TestimonialSlider = ({
   current,
   setCurrent,
-  nextSlide,
-  previousSlide,
 }) => {
+  // ----- Timer and hovering states
+  const [timer, setTimer] = useState(null)
+  const [isHovered, setIsHovered] = useState(false)
+
   return (
     <div className=" relative flex m-auto max-w-[1240px] min-h-[500px] justify-center items-center h-[50vh] mb-4 group  z-10 text-light">
       {/* ----- Carousel Content Div ------ */}
