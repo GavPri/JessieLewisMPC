@@ -2,16 +2,25 @@ import React, { useState } from "react";
 import testimonialData from "../../data/testimonial-data/TestimonialData";
 import { FaArrowAltCircleLeft, FaArrowAltCircleRight } from "react-icons/fa";
 
-const TestimonialSlider = ({
-  current,
-  setCurrent,
-}) => {
+const TestimonialSlider = ({ current, setCurrent }) => {
   // ----- Timer and hovering states
-  const [timer, setTimer] = useState(null)
-  const [isHovered, setIsHovered] = useState(false)
+  const [timer, setTimer] = useState(null);
+  const [isHovered, setIsHovered] = useState(false);
 
+  // handle hover state functions
+  const handleMouseEnter = () => {
+    setIsHovered(true);
+  };
+
+  const handleMouseLeave = () => {
+    onmouseleave(false);
+  };
   return (
-    <div className=" relative flex m-auto max-w-[1240px] min-h-[500px] justify-center items-center h-[50vh] mb-4 group  z-10 text-light">
+    <div
+      onMouseLeave={handleMouseLeave}
+      onMouseEnter={handleMouseEnter}
+      className=" relative flex m-auto max-w-[1240px] min-h-[500px] justify-center items-center h-[50vh] mb-4 group  z-10 text-light"
+    >
       {/* ----- Carousel Content Div ------ */}
       {testimonialData.map((t, idx) => (
         <div
