@@ -3,18 +3,20 @@ import aboutMeData from "../../data/aboutme-data/aboutMeData";
 
 const AboutMeCard = () => {
   return (
-    <div className="max-w-[80vw] m-auto mt-4">
+    <div className="max-w-readable m-auto mt-4">
       {aboutMeData.map((t, idx) => (
         <div
           key={idx}
-          className="mb-4 text-left border-2 border-light rounded-md px-2"
+          className="md:flex md:flex-col md:items-center  mb-4 rounded-md px-2"
         >
-          <h2 className=" text-xl font-bold bg-gradient-to-r from-darkest to-neutral text-transparent bg-clip-text uppercase text-center">
+          <h2 className="text-2xl pb-2 font-bold bg-gradient-to-r from-darkest to-neutral text-transparent bg-clip-text uppercase text-center md:text-left">
             {t.title}
           </h2>
-          <p className="max-w-readable text-darkest mt-2 text-center pb-2">
-            {t.content}
-          </p>
+          <div className="w-full flex justify-center items-center bg-gradient-to-r shadow-md from-darkest to-dark rounded-md">
+            <p className=" text-transparent max-w-readable bg-gradient-to-r from-lightest to-light bg-clip-text p-4">
+              {t.content}
+            </p>
+          </div>
         </div>
       ))}
     </div>
