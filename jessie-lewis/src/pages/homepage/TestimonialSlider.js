@@ -3,7 +3,6 @@ import testimonialData from "../../data/testimonial-data/TestimonialData";
 
 const TestimonialSlider = ({ current, setCurrent }) => {
   // ----- Timer and hovering states
-  const [timer, setTimer] = useState(null);
   const [isHovered, setIsHovered] = useState(false);
 
   // UseEffect
