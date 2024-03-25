@@ -11,10 +11,6 @@ const HomePage = () => {
       <div>
         <ServicesIntro />
       </div>
-      {/* <div>
-        <AboutMeIntro />
-      </div> */}
-      <div>{/* <TestimonialSlider /> */}</div>
     </div>
   );
 };
