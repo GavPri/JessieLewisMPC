@@ -1,8 +1,6 @@
 import React from "react";
 import HeroSection from "./HeroSection";
-import AboutMeIntro from "./AboutMeIntro";
 import ServicesIntro from "./ServicesIntro";
-import TestimonialSlider from "./TestimonialSlider";
 
 const HomePage = () => {
   return (
