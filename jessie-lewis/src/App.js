@@ -3,6 +3,7 @@ import { Route, Switch } from "react-router-dom";
 import HomePage from "./pages/homepage/HomePage";
 import Faqs from "./pages/faqs/Faqs";
 import ContactForm from "./pages/contact-me/ContactForm";
+import AboutMe from "./pages/about-me/AboutMe";
 
 function App() {
   return (
@@ -11,13 +12,13 @@ function App() {
       <div>
         <Switch>
           <Route exact path="/" render={() => <HomePage />} />
-          <Route exact path="/about" render={() => <h1>About Page!</h1>} />
+          <Route exact path="/about" render={() => <AboutMe />} />
           <Route
             exact
             path="/services"
             render={() => <h1>Services Page!</h1>}
           />
-          <Route exact path="/contact" render={() => <ContactForm/>} />
+          <Route exact path="/contact" render={() => <ContactForm />} />
           <Route exact path="/faqs" render={() => <Faqs />} />
         </Switch>
       </div>
