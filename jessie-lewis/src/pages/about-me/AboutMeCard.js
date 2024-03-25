@@ -1,4 +1,5 @@
 import React from "react";
+import aboutMeData from "../../data/aboutme-data/aboutMeData";
 
 const AboutMeCard = (props) => {
   return (
