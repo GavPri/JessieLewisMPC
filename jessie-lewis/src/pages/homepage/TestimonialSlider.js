@@ -1,11 +1,22 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import testimonialData from "../../data/testimonial-data/TestimonialData";
-import { FaArrowAltCircleLeft, FaArrowAltCircleRight } from "react-icons/fa";
 
 const TestimonialSlider = ({ current, setCurrent }) => {
   // ----- Timer and hovering states
   const [timer, setTimer] = useState(null);
   const [isHovered, setIsHovered] = useState(false);
+
+  // UseEffect
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      if (!isHovered) {
+        const newIndex = (current + 1) % testimonialData.length;
+        setCurrent(newIndex);
+      }
+    }, 5000);
+
+    return () => clearInterval(intervalId);
+  }, [current, isHovered]);
 
   // handle hover state functions
   const handleMouseEnter = () => {
@@ -13,7 +24,7 @@ const TestimonialSlider = ({ current, setCurrent }) => {
   };
 
   const handleMouseLeave = () => {
-    onmouseleave(false);
+    setIsHovered(false);
   };
   return (
     <div
