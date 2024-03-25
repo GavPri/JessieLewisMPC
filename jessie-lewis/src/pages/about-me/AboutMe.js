@@ -15,7 +15,10 @@ const AboutMe = () => {
       <h1 className="text-2xl font-bold bg-gradient-to-r from-darkest to-neutral text-transparent bg-clip-text uppercase">
         Get to know Jessie
       </h1>
-      
+      <div
+        style={divStyle}
+        className="w-64 aspect-square rounded-lg m-auto mt-4"
+      ></div>
     </div>
   );
 };
