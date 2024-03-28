@@ -1,6 +1,6 @@
 import React from "react";
 // ----- Hero Image
-import services from "../../images/services.jpeg";
+import services from "../../images/services.jpg";
 
 const Services = () => {
   // ----- Style of div to hold background image
