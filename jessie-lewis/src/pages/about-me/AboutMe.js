@@ -15,13 +15,13 @@ const AboutMe = () => {
     <div className="mt-24 max-w-[1240px] m-auto text-center lg:flex lg:items-start">
       {/* ----- Title */}
       <div>
-        <h1 className="text-2xl font-bold bg-gradient-to-r from-darkest to-neutral text-transparent bg-clip-text uppercase">
+        <h1 className="text-3xl font-bold bg-gradient-to-r from-darkest to-neutral text-transparent bg-clip-text uppercase">
           Get to know Jessie
         </h1>
         {/* ----- Profile picture */}
         <div
           style={divStyle}
-          className="md:w-96 w-64 aspect-square rounded-lg m-auto mt-4 shadow-md"
+          className="md:h-[65vh] h-64 aspect-square rounded-lg m-auto mt-4 shadow-md"
         ></div>
       </div>
       <AboutMeCard />

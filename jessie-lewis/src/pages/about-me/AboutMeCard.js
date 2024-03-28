@@ -3,7 +3,7 @@ import aboutMeData from "../../data/aboutme-data/aboutMeData";
 
 const AboutMeCard = () => {
   return (
-    <div className="max-w-readable m-auto mt-4">
+    <div className="max-w-readable m-auto mt-4 md:mt-0">
       {aboutMeData.map((t, idx) => (
         <div
           key={idx}
