@@ -1,9 +1,10 @@
-import React from 'react'
+import React from "react";
 
 const Services = () => {
-  return (
-    <div>Services</div>
-  )
-}
+    
+  return <div className="max-w-[1240px] m-auto mt-24">
 
-export default Services
+  </div>;
+};
+
+export default Services;
