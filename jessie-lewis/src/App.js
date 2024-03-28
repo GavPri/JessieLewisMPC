@@ -4,6 +4,7 @@ import HomePage from "./pages/homepage/HomePage";
 import Faqs from "./pages/faqs/Faqs";
 import ContactForm from "./pages/contact-me/ContactForm";
 import AboutMe from "./pages/about-me/AboutMe";
+import Services from "./pages/services/Services";
 
 function App() {
   return (
@@ -13,11 +14,7 @@ function App() {
         <Switch>
           <Route exact path="/" render={() => <HomePage />} />
           <Route exact path="/about" render={() => <AboutMe />} />
-          <Route
-            exact
-            path="/services"
-            render={() => <h1>Services Page!</h1>}
-          />
+          <Route exact path="/services" render={() => <Services />} />
           <Route exact path="/contact" render={() => <ContactForm />} />
           <Route exact path="/faqs" render={() => <Faqs />} />
         </Switch>
