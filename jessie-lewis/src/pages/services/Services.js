@@ -1,19 +1,20 @@
 import React from "react";
 // ----- Hero Image
-import services from "../../images/services.jpg";
+import service from "../../images/services.jpg";
 
 const Services = () => {
   // ----- Style of div to hold background image
   const divStyle = {
-    backgroundImage: `url(${services})`,
+    backgroundImage: `url(${service})`,
     backgroundSize: "cover",
-    backgroundPosition: "top, left",
+    backgroundPosition: "top, center",
     backgroundRepeat: "no-repeat",
   };
   return (
     <div className="max-w-[1240px] m-auto mt-24">
       {/* ----- Banner image */}
-      <div style={divStyle}></div>
+      <div className="w-full h-[50vh] bg-darkest " style={divStyle}>
+      </div>
     </div>
   );
 };
