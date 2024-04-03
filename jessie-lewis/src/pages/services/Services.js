@@ -12,25 +12,14 @@ const Services = () => {
     setOpenAccordion(openAccordion === index ? -1 : index);
   };
 
-  const divStyle = {
-    backgroundImage: `url(${service})`,
-    backgroundSize: "cover",
-    backgroundPosition: "top, center",
-    backgroundRepeat: "no-repeat",
-  };
-
   return (
     <div className="max-w-[1240px] m-auto mt-24">
-      <div
-        className="w-full h-[50vh] bg-darkest flex justify-center items-center"
-        style={divStyle}
-      ></div>
-      <div className="mb-4 m-auto text-center px-4 py-2 bg-gradient-to-r from-darkest to-neutral bg-clip-text text-3xl ">
-        <h1 className="uppercase text-transparent ml-4 md:text-4xl ">
-          Services
-        </h1>
-      </div>
       <div className="lg:flex lg:flex-col max-w-[1240px] justify-center items-center w-full">
+        <div className="mb-4 m-auto text-center md:text-left px-4 py-2 bg-gradient-to-r from-darkest to-neutral bg-clip-text text-3xl ">
+          <h1 className="uppercase text-transparent ml-4 md:text-4xl ">
+            Services
+          </h1>
+        </div>
         {servicesData.services.map((service, index) => (
           <div
             key={index}
@@ -68,7 +57,7 @@ const Services = () => {
               <Button
                 to="/contact"
                 text="Contact Me"
-                className={`m-auto md:ml-4 mb-2 max-w-[30vh]`}
+                className={` ml-6 mb-2 max-w-[50vw]`}
               />
             </div>
           </div>
