@@ -8,7 +8,7 @@ const servicesData = {
       shortServiceIntro:
         "Personalized coaching sessions tailored to enhance your mental performance.",
       serviceDescription:
-        "Experience the benefits of individualized coaching with strategies designed to address your unique needs. Unlock your full potential and achieve peak mental performance.",
+        "My philosophy of practice involves establishing a strong working alliance through client-centered sessions and an emphasis placed on building self-confidence and mindfulness-based skills.  My goal is to empower individuals with skills to self-regulate, manage stress and emotions, and cultivate self-confidence, which will translate both on and off the court or field. I believe in the versatility of mental performance tools extending beyond sports, aiming to equip individuals with the means to excel in all facets of their lives.  Through a collaborative approach, I tailor each session to address the personalized needs of each athlete, focusing on specific mental skills through psychoeducation and exercises.",
       servicesIcon: <FaUser />,
     },
     {
@@ -16,7 +16,7 @@ const servicesData = {
       shortServiceIntro:
         "Tailored programs for teams and organizations to optimize collective mental performance.",
       serviceDescription:
-        "Elevate your team's mental performance with customized workshops and training programs. Foster collaboration, resilience, and excellence within your group or organization.",
+        "My philosophy of practice involves establishing a strong working alliance through client-centered sessions and an emphasis placed on building self-confidence and mindfulness-based skills.  My goal is to empower individuals with skills to self-regulate, manage stress and emotions, and cultivate self-confidence, which will translate both on and off the court or field. I believe in the versatility of mental performance tools extending beyond sports, aiming to equip individuals with the means to excel in all facets of their lives.  Through a collaborative approach, I tailor each session to address the personalized needs of each athlete, focusing on specific mental skills through psychoeducation and exercises.",
       servicesIcon: <FaUsers />,
     },
     {
@@ -24,7 +24,7 @@ const servicesData = {
       shortServiceIntro:
         "Engaging talks and presentations on mental performance for events and conferences.",
       serviceDescription:
-        "Invite our expert speaker to your event for insightful discussions on mental performance. Inspire your audience with practical strategies to enhance mental well-being and productivity.",
+        "I offer speaking engagements for schools and sports clubs to educate larger audiences about the concept of mental performance and its potential to enhance performance in all aspects of life.  I strongly believe that mental performance techniques are not limited to sport settings but are applicable across different performance contexts.  These speaking engagements follow a similar format to team sessions, albeit with a broader focus on explaining the essence of mental performance and the significance of addressing the mental aspect of performance.  For further details on speaking engagements, please feel free to reach out to me via email.",
       servicesIcon: <FaMicrophone />,
     },
   ],
