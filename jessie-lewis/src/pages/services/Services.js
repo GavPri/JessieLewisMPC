@@ -1,59 +1,76 @@
-import React from "react";
-// ----- Hero Image
+import React, { useState } from "react";
+import { AiOutlinePlus } from "react-icons/ai";
 import service from "../../images/services.jpg";
-// ----- Services data
 import servicesData from "../../data/services-data/servicesData";
-// ----- NavLink & Button import
 import { NavLink } from "react-router-dom/cjs/react-router-dom.min";
 import Button from "../../components/Button";
 
 const Services = () => {
-  // ----- State to handle accordion
   const [openAccordion, setOpenAccordion] = useState(-1);
 
   const handleAccordion = (index) => {
     setOpenAccordion(openAccordion === index ? -1 : index);
   };
-  // ----- Style of div to hold background image
+
   const divStyle = {
     backgroundImage: `url(${service})`,
     backgroundSize: "cover",
     backgroundPosition: "top, center",
     backgroundRepeat: "no-repeat",
   };
+
   return (
     <div className="max-w-[1240px] m-auto mt-24">
-      {/* ----- Banner image */}
       <div
         className="w-full h-[50vh] bg-darkest flex justify-center items-center"
         style={divStyle}
       ></div>
-      {/* Services list */}
-      {/* ----- Bannner  */}
-      <div className="m-auto text-center px-4 py-2 bg-gradient-to-r from-darkest to-neutral bg-clip-text text-3xl border-b-2 w-[50%] border-darkest">
-        <h1 className="uppercase text-transparent">Services</h1>
+      <div className="mb-4 m-auto text-center px-4 py-2 bg-gradient-to-r from-darkest to-neutral bg-clip-text text-3xl ">
+        <h1 className="uppercase text-transparent ml-4 md:text-4xl ">
+          Services
+        </h1>
       </div>
-      
-      <div className="lg:flex m-auto max-w-[80vh] md:max-w-[1240px]">
+      <div className="lg:flex lg:flex-col max-w-[1240px] justify-center items-center w-full">
         {servicesData.services.map((service, index) => (
           <div
             key={index}
-            className="text-center drop-shadow-lg overflow-hidden group bg-transparent sm:w-11/12 lg:mx-4 lg:flex lg:flex-col lg:justify-between lg:items-start text-darkest  mt-4 rounded-lg p-4 border-2 border-transparent hover:border-darkest hover:text-lightest glass hover:bg-darkest transition-all duration-500"
+            className="max-w-readable border-2 border-neutral rounded-md drop-shadow-md mb-4"
           >
-            <NavLink to="/services">
-              <div className="flex justify-center items-center max-w-readable bg-gradient-to-r from-darkest to-neutral bg-clip-text text-3xl border-b-2 border-neutral ">
-                <h4 className=" p-4 text-2xl font-poppins uppercase text-transparent">
-                  {service.serviceName}
-                </h4>
-                <p className="hidden lg:flex lg:text-4xl lg:mb-2 ml-auto lg:order-1 ">
-                  {service.servicesIcon}
-                </p>
-              </div>
-              <p className="lg:bg-darkest rounded-md mb-2 font-bold lg:text-lightest p-4 lg:transform lg:translate-x-full lg:group-hover:translate-x-0 lg:transition-transform lg:duration-500">
+            <div
+              className="flex justify-between items-center relative w-full"
+              onClick={() => handleAccordion(index)}
+            >
+              <h4 className="p-4 text-2xl font-poppins uppercase ml-4">
+                {service.serviceName}
+              </h4>
+              <p
+                className={
+                  openAccordion === index
+                    ? "rotate-45 transition-all duration-300 ease-in-out"
+                    : "transition-all duration-300 ease-in-out"
+                }
+              >
+                <AiOutlinePlus size={20} className="mr-4" />
+              </p>
+            </div>
+            <div
+              className={`overflow-hidden transition-all duration-500 ease-in-out text-center md:text-left mt-2 px-2 ${
+                openAccordion === index ? "max-h-[150vh] mt-2" : "max-h-0"
+              }`}
+            >
+              <p
+                className={`font-poppins transition-all duration-300 md:mx-4 mb-4 px-4 ml-4 text-left ${
+                  openAccordion === index ? "opacity-100" : "opacity-0"
+                }`}
+              >
                 {service.serviceDescription}
               </p>
-            </NavLink>
-            <Button to="/contact" text="Contact Me" className={`m-auto`} />
+              <Button
+                to="/contact"
+                text="Contact Me"
+                className={`m-auto md:ml-4 mb-2 max-w-[30vh]`}
+              />
+            </div>
           </div>
         ))}
       </div>
