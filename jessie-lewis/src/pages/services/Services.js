@@ -8,6 +8,12 @@ import { NavLink } from "react-router-dom/cjs/react-router-dom.min";
 import Button from "../../components/Button";
 
 const Services = () => {
+  // ----- State to handle accordion
+  const [openAccordion, setOpenAccordion] = useState(-1);
+
+  const handleAccordion = (index) => {
+    setOpenAccordion(openAccordion === index ? -1 : index);
+  };
   // ----- Style of div to hold background image
   const divStyle = {
     backgroundImage: `url(${service})`,
@@ -27,6 +33,7 @@ const Services = () => {
       <div className="m-auto text-center px-4 py-2 bg-gradient-to-r from-darkest to-neutral bg-clip-text text-3xl border-b-2 w-[50%] border-darkest">
         <h1 className="uppercase text-transparent">Services</h1>
       </div>
+      
       <div className="lg:flex m-auto max-w-[80vh] md:max-w-[1240px]">
         {servicesData.services.map((service, index) => (
           <div
