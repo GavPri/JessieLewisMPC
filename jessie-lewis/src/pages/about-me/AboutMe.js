@@ -12,17 +12,12 @@ const AboutMe = () => {
   };
 
   return (
-    <div className="mt-24 max-w-[1240px] m-auto text-center lg:flex lg:items-start">
+    <div className="mt-24 max-w-[1240px] m-auto bg-dark">
       {/* ----- Title */}
       <div>
-        <h1 className="">
-          Get to know Jessie
-        </h1>
+        <h1 className="">About Jessie</h1>
         {/* ----- Profile picture */}
-        <div
-          style={divStyle}
-          className=""
-        ></div>
+        <div style={divStyle} className=""></div>
       </div>
       <AboutMeCard />
     </div>
