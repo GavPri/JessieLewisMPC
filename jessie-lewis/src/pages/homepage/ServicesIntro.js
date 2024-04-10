@@ -13,9 +13,11 @@ const ServicesIntro = () => {
       </div>
       <div className="lg:flex">
         {servicesData.services.map((service, index) => (
-          <div key={index}>
+          <div key={index} className="mb-2">
             <NavLink to="/services">
-              <p className="">{service.servicesIcon}</p>
+              <div className="flex justify-center items-center bg-neutral w-[50%] m-auto min-h-24 rounded-md opacity-50 mt-2">
+                <p className="">{service.servicesIcon}</p>
+              </div>
               <h4 className="">{service.serviceName}</h4>
               <p className="">{service.shortServiceIntro}</p>
             </NavLink>
