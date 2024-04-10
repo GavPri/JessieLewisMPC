@@ -48,14 +48,18 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="max-w-[800px] m-auto mt-24 glass py-4 rounded-md">
-      <h1 className="text-4xl text-darkest px-6 font-extrabold flex items-center justify-start">
+    <div className="max-w-[800px] m-auto mt-24 py-4 rounded-md">
+      <h1 className="text-4xl text-darkest px-6 flex items-center justify-start font-poppins mb-4">
         Contact Me
         <span className="ml-4">
           <AiOutlineMail />
         </span>
       </h1>
-      <form className="m-auto p-6" onSubmit={sendEmail} ref={form}>
+      <form
+        className="m-auto p-6 bg-dark text-light mx-2 rounded-md"
+        onSubmit={sendEmail}
+        ref={form}
+      >
         <div className="max-w-full mb-4">
           <label htmlFor="user_name">Your full name:</label>
           <input
