@@ -9,7 +9,7 @@ const ServicesIntro = () => {
       <h3 className="font-poppins font-bold text-darkest pb-2 text-3xl text-center">
         Services
       </h3>
-      <div className="lg:flex">
+      <div className="lg:flex lg:gap-4">
         {servicesData.services.map((service, index) => (
           <div key={index} className="mb-6 bg-dark p-6 rounded-lg mt-2">
             <NavLink to="/services">
