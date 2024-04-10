@@ -1,9 +1,13 @@
 import React, { useState, useEffect } from "react";
 import testimonialData from "../../data/testimonial-data/TestimonialData";
+import Button from "../../components/Button";
 
 const TestimonialSlider = ({ current, setCurrent }) => {
-  // ----- Timer and hovering states
+  // ----- window width & hovering states
   const [isHovered, setIsHovered] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
+
+  // ---- handMobile
 
   // UseEffect
   useEffect(() => {
@@ -14,7 +18,22 @@ const TestimonialSlider = ({ current, setCurrent }) => {
       }
     }, 5000);
 
-    return () => clearInterval(intervalId);
+    const handleMobile = () => {
+      if (window.innerWidth < 764) {
+        setIsMobile(true);
+      } else {
+        return;
+      }
+    };
+
+    handleMobile();
+
+    window.addEventListener("resize", handleMobile);
+
+    return () => {
+      clearInterval(intervalId);
+      window.removeEventListener("resize", handleMobile);
+    };
   }, [current, isHovered]);
 
   // handle hover state functions
@@ -41,14 +60,18 @@ const TestimonialSlider = ({ current, setCurrent }) => {
               : "opacity-0 transform -translate-x-20"
           }`}
         >
-          <div className="max-h-40vh button py-4 px-6 rounded-md opacity-80">
-            <p className=" block max-w-readable md:text-2xl mt-4 text-lightest rounded-md opacity-100">
-              {t.testimonial}
+          <div className="max-h-40vh button py-4 px-6 rounded-md bg-opacity-30">
+            <p className="block max-w-readable md:text-2xl mt-4 text-lightest rounded-md  font-poppins">
+              "
+              {isMobile ? `${t.testimonial.slice(0, 170)}` : `${t.testimonial}`}
+              ..."
             </p>
             <p className="font-bold mt-4">
               {t.name}, <span className="ml-2 font-thin">{t.role}</span>
             </p>
+            <Button text="Read More" to="/contact" className={`m-auto mt-2`}/>
           </div>
+          
         </div>
       ))}
       {/* ----- End Of Carousel Content Div ----- */}

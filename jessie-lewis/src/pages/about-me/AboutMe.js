@@ -14,14 +14,14 @@ const AboutMe = () => {
   return (
     <div className="mt-24 max-w-[1240px] m-auto ">
       {/* ----- Title */}
-      <div className="mb-4">
+      <div className="mb-4 flex flex-col justify-center items-center">
         <h1 className="text-center text-darkest capitalize font-poppins text-5xl mb-2">
           About Jessie
         </h1>
         {/* ----- Profile picture */}
         <div
           style={divStyle}
-          className="max-w-readable aspect-square rounded-lg m-auto mx-2"
+          className="w-64 aspect-square rounded-lg m-auto mx-2"
         ></div>
       </div>
       <AboutMeCard />
