@@ -13,7 +13,7 @@ const ServicesIntro = () => {
         {servicesData.services.map((service, index) => (
           <div key={index} className="mb-6 bg-dark p-6 rounded-lg mt-2">
             <NavLink to="/services">
-              <div className="flex justify-center items-center bg-neutral w-[50%] m-auto min-h-24 rounded-md opacity-50 my-6">
+              <div className="flex justify-center items-center bg-neutral w-[50%] m-auto min-h-24 rounded-md bg-opacity-50 my-6">
                 <p className="text-2xl text-lightest opacity-100">
                   {service.servicesIcon}
                 </p>
