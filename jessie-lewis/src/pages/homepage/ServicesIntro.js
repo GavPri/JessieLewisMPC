@@ -6,7 +6,7 @@ import { NavLink } from "react-router-dom/cjs/react-router-dom.min";
 const ServicesIntro = () => {
   return (
     <div className="max-w-[1240px] bg-transparent m-auto p-6 mb-2 rounded-md">
-      <h3 className="font-poppins font-bold text-darkest pb-2 text-3xl text-center">
+      <h3 className="font-poppins font-bold text-darkest pb-2 text-4xl text-center">
         Services
       </h3>
       <div className="lg:flex lg:gap-4">
