@@ -21,9 +21,9 @@ const ServicesIntro = () => {
               <h4 className="text-center mb-2 text-xl font-poppins capitalize">
                 {service.serviceName}
               </h4>
-              <p className="">{service.shortServiceIntro}</p>
+              <p className="text-center mb-2 font-poppins">{service.shortServiceIntro}</p>
             </NavLink>
-            <Button to="/services" text="Learn More" />
+            <Button to="/services" text="Learn More" className={`m-auto`} />
           </div>
         ))}
       </div>
