@@ -25,7 +25,7 @@ const ServicesIntro = () => {
                 {service.shortServiceIntro}
               </p>
             </NavLink>
-            <Button to="/services" text="Learn More" className={`m-auto`} />
+            <Button to="/contact" text="Contact Me" className={`m-auto`} />
           </div>
         ))}
       </div>
