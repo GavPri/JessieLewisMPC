@@ -15,7 +15,7 @@ const FaqsAccordion = () => {
         <>
           <div
             key={index}
-            className={`w-full md:w-12/12 rounded-md ${
+            className={` rounded-md ${
               openAccordion === index
                 ? "bg-lightest text-dark"
                 : "bg-dark text-lightest"
@@ -42,12 +42,12 @@ const FaqsAccordion = () => {
             </div>
             {/* Answer Div */}
             <div
-              className={`overflow-hidden transition-all duration-500 ease-in-out ${
+              className={`overflow-hidden transition-all duration-300 ease-in-out ${
                 openAccordion === index ? "max-h-96 mt-2" : "max-h-0"
               }`}
             >
               <p
-                className={`font-poppins transition-all duration-500 ${
+                className={`font-poppins transition-all duration-300 ${
                   openAccordion === index ? "opacity-100" : "opacity-0"
                 }`}
               >
