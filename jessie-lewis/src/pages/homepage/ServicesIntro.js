@@ -6,22 +6,24 @@ import { NavLink } from "react-router-dom/cjs/react-router-dom.min";
 const ServicesIntro = () => {
   return (
     <div className="max-w-[1240px] bg-transparent m-auto p-6 mb-2 rounded-md">
-      <div className="w-4/6 border-b-2 border-b-dark ml-2">
-        <h3 className="font-poppins font-bold text-darkest pb-2 text-3xl">
-          Services
-        </h3>
-      </div>
+      <h3 className="font-poppins font-bold text-darkest pb-2 text-3xl text-center">
+        Services
+      </h3>
       <div className="lg:flex">
         {servicesData.services.map((service, index) => (
-          <div key={index} className="mb-4">
+          <div key={index} className="mb-6 bg-dark p-6 rounded-lg mt-2">
             <NavLink to="/services">
-              <div className="flex justify-center items-center bg-neutral w-[50%] m-auto min-h-24 rounded-md opacity-50 my-4">
-                <p className="text-2xl">{service.servicesIcon}</p>
+              <div className="flex justify-center items-center bg-neutral w-[50%] m-auto min-h-24 rounded-md opacity-50 my-6">
+                <p className="text-2xl text-lightest opacity-100">
+                  {service.servicesIcon}
+                </p>
               </div>
-              <h4 className="text-center mb-2 text-xl font-poppins capitalize">
+              <h4 className="text-center mb-2 text-xl font-poppins capitalize text-lightest">
                 {service.serviceName}
               </h4>
-              <p className="text-center mb-2 font-poppins">{service.shortServiceIntro}</p>
+              <p className="text-center mb-2 font-poppins text-light">
+                {service.shortServiceIntro}
+              </p>
             </NavLink>
             <Button to="/services" text="Learn More" className={`m-auto`} />
           </div>
