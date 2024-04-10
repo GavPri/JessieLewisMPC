@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 import { AiOutlinePlus } from "react-icons/ai";
-import service from "../../images/services.jpg";
 import servicesData from "../../data/services-data/servicesData";
-import { NavLink } from "react-router-dom/cjs/react-router-dom.min";
 import Button from "../../components/Button";
 
 const Services = () => {
