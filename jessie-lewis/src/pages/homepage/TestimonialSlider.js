@@ -63,15 +63,15 @@ const TestimonialSlider = ({ current, setCurrent }) => {
           <div className="max-h-40vh button py-4 px-6 rounded-md bg-opacity-30">
             <p className="block max-w-readable md:text-2xl mt-4 text-lightest rounded-md  font-poppins">
               "
-              {isMobile ? `${t.testimonial.slice(0, 170)}` : `${t.testimonial}`}
-              ..."
+              {isMobile
+                ? `${t.testimonial.slice(0, 170)}...`
+                : `${t.testimonial}`}
+              "
             </p>
             <p className="font-bold mt-4">
               {t.name}, <span className="ml-2 font-thin">{t.role}</span>
             </p>
-            <Button text="Read More" to="/contact" className={`m-auto mt-2`}/>
           </div>
-          
         </div>
       ))}
       {/* ----- End Of Carousel Content Div ----- */}
