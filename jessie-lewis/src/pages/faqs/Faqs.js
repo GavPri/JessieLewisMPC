@@ -1,10 +1,8 @@
 import React from "react";
-import faqs from "../../images/faqs.jpeg";
 import FaqsAccordion from "./FaqsAccordion";
 import Button from "../../components/Button";
 
 const Faqs = () => {
-  
 
   return (
     <div className="mt-24 max-w-[1240px] m-auto h-fit p-6 md:flex md:justify-around rounded-md">
@@ -22,8 +20,6 @@ const Faqs = () => {
           <Button to="/contact" text="Contact Me" />
         </div>
       </div>
-      {/* image container */}
-      
     </div>
   );
 };
