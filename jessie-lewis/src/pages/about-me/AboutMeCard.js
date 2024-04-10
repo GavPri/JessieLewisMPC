@@ -6,9 +6,9 @@ const AboutMeCard = () => {
     <div className="">
       {aboutMeData.map((t, idx) => (
         <div key={idx} className="">
-          <div >
-            <p>{t.aboutIcon}</p>
-            <h2 className="">{t.title}</h2>
+          <div className="flex justify-center items-center bg-dark bg-opacity-95 text-lightest max-w-64 rounded-md m-auto py-2">
+            <p className="text-3xl mr-4">{t.aboutIcon}</p>
+            <h2 className="font-poppins text-xl">{t.title}</h2>
           </div>
           <div className="">
             <p className="">{t.content}</p>
