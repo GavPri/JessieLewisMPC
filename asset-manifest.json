@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/jessielewismpc/static/css/main.46861943.css",
+    "main.js": "/jessielewismpc/static/js/main.9d80f7cd.js",
+    "static/js/787.31be4f73.chunk.js": "/jessielewismpc/static/js/787.31be4f73.chunk.js",
+    "static/media/jessiebanner.png": "/jessielewismpc/static/media/jessiebanner.9eed1e26bbbf0b3959d2.png",
+    "static/media/jlewis-background.png": "/jessielewismpc/static/media/jlewis-background.0ab5c837a96a87970327.png",
+    "static/media/banner.jpeg": "/jessielewismpc/static/media/banner.6781b073ddbd23259bae.jpeg",
+    "index.html": "/jessielewismpc/index.html",
+    "main.46861943.css.map": "/jessielewismpc/static/css/main.46861943.css.map",
+    "main.9d80f7cd.js.map": "/jessielewismpc/static/js/main.9d80f7cd.js.map",
+    "787.31be4f73.chunk.js.map": "/jessielewismpc/static/js/787.31be4f73.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.46861943.css",
+    "static/js/main.9d80f7cd.js"
+  ]
+}
