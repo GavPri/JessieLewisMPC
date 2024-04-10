@@ -15,13 +15,13 @@ const AboutMe = () => {
     <div className="mt-24 max-w-[1240px] m-auto ">
       {/* ----- Title */}
       <div className="mb-4">
-        <h1 className="text-center text-darkest uppercase font-poppins text-2xl mb-2">
+        <h1 className="text-center text-darkest uppercase font-poppins text-5xl mb-2">
           About Jessie
         </h1>
         {/* ----- Profile picture */}
         <div
           style={divStyle}
-          className="w-64 aspect-square rounded-full m-auto"
+          className="max-w-readable aspect-square rounded-lg m-auto"
         ></div>
       </div>
       <AboutMeCard />
