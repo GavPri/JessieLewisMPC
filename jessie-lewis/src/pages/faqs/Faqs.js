@@ -4,12 +4,7 @@ import FaqsAccordion from "./FaqsAccordion";
 import Button from "../../components/Button";
 
 const Faqs = () => {
-  const divStyle = {
-    backgroundImage: `url(${faqs})`,
-    backgroundSize: "cover",
-    backgroundPosition: "center",
-    backgroundRepeat: "no-repeat",
-  };
+  
 
   return (
     <div className="mt-24 max-w-[1240px] m-auto h-fit p-6 md:flex md:justify-around rounded-md">
@@ -28,10 +23,7 @@ const Faqs = () => {
         </div>
       </div>
       {/* image container */}
-      <div
-        className="hidden md:flex md:w-3/12 md:h-screen md:rounded-md"
-        style={divStyle}
-      ></div>
+      
     </div>
   );
 };
