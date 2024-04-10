@@ -13,15 +13,16 @@ const Services = () => {
   return (
     <div className="max-w-[1240px] m-auto mt-24">
       <div className="lg:flex lg:flex-col max-w-[1240px] justify-center items-center w-full">
-        <div className="mb-4 m-auto text-center md:text-left px-4 py-2 bg-gradient-to-r from-darkest to-neutral bg-clip-text text-3xl ">
-          <h1 className="uppercase text-transparent ml-4 md:text-4xl ">
-            Services
-          </h1>
+        <div className="w-3/4 m-auto text-center">
+          <h1 className="text-darkest text-4xl mb-6 font-poppins">Services</h1>
+          <p className="font-poppins mb-4 text-xl text-darkest">
+            Read about our services below
+          </p>
         </div>
         {servicesData.services.map((service, index) => (
           <div
             key={index}
-            className={`w-3/4 rounded-md ${
+            className={`w-3/4 rounded-md m-auto ${
               openAccordion === index
                 ? "bg-lightest text-dark"
                 : "bg-dark text-lightest"
@@ -50,7 +51,7 @@ const Services = () => {
               }`}
             >
               <p
-                className={`font-poppins transition-all duration-300 md:mx-4 mb-4 px-4 ml-4 text-left ${
+                className={`font-poppins transition-all duration-300 md:mx-4 mb-4 md:px-4 ml-4 text-left ${
                   openAccordion === index ? "opacity-100" : "opacity-0"
                 }`}
               >
@@ -59,7 +60,7 @@ const Services = () => {
               <Button
                 to="/contact"
                 text="Contact Me"
-                className={` ml-6 mb-2 max-w-[50vw]`}
+                className={`ml-6 mb-2 max-w-[50vw]`}
               />
             </div>
           </div>
