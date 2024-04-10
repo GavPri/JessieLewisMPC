@@ -15,7 +15,11 @@ const FaqsAccordion = () => {
         <>
           <div
             key={index}
-            className="w-full md:w-12/12 rounded-md text-darkest  hover:cursor-pointer mb-4 border-2 border-neutral p-4"
+            className={`w-full md:w-12/12 rounded-md ${
+              openAccordion === index
+                ? "bg-lightest text-dark"
+                : "bg-dark text-lightest"
+            }  hover:cursor-pointer mb-4 border-2 border-neutral p-4`}
           >
             <div
               className={`flex justify-between items-center relative ${
